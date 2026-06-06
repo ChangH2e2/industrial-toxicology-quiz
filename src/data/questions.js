@@ -2314,6 +2314,282 @@ export const questions = [
     options:['스프링클러(물 분무)','하론 소화설비','CO₂(이산화탄소) 소화설비','포말 소화설비'],
     answer:2, explanation:'CO₂ 소화설비: 전기 화재에 유효. 밀폐공간 오방출 시 CO₂ 농도 급상승 → O₂ 치환 → 질식. 2018년 삼성 사고.' },
 
+  /* ══════════════════════════════════════════════════
+     ★ 4차 추가 OX (416~430) — 독성기초·공정·제도 보완
+  ══════════════════════════════════════════════════ */
+
+  { id:416, type:'ox', lecture:'9강', category:'독성 개념',
+    question:'LD50(반수치사량)은 실험동물 집단의 50%를 사망시키는 독성물질의 투여량이다.',
+    answer:true, explanation:'LD50(Lethal Dose 50): mg/kg 단위. 값이 낮을수록 독성이 강함. 독성 물질 강도 비교에 사용.' },
+
+  { id:417, type:'ox', lecture:'9강', category:'독성 개념',
+    question:'LD50 수치가 낮을수록 독성이 강한 물질이다.',
+    answer:true, explanation:'LD50 낮음 = 소량으로 반수치사 가능 = 독성 강함. 보툴리눔 독소(LD50 ≈ 0.000001 mg/kg)가 자연계 최강 독.' },
+
+  { id:418, type:'ox', lecture:'9강', category:'독성 개념',
+    question:'급성독성(Acute Toxicity)은 24시간 이내 단일 또는 단기 고농도 노출로 나타나는 독성이다.',
+    answer:true, explanation:'급성독성: 단일·단기 노출. 빠르게 나타남. 반면 만성독성은 저농도 반복 장기 노출로 서서히 발현.' },
+
+  { id:419, type:'ox', lecture:'9강', category:'독성 개념',
+    question:'만성독성(Chronic Toxicity)은 저농도 물질에 수개월~수년 반복 노출 후 나타나는 독성이다.',
+    answer:true, explanation:'만성독성: 잠복기 길고 비특이적. 직업성 질환 대부분이 만성독성. 발암성·생식독성·신경독성 포함.' },
+
+  { id:420, type:'ox', lecture:'10강', category:'독성동태',
+    question:'경구(입) 흡수된 독성물질은 간을 통과하면서 일부 대사·분해되는 1차 통과효과(First-pass Effect)가 나타난다.',
+    answer:true, explanation:'First-pass Effect(초회 통과 효과): 경구 흡수 → 간문맥 → 간 초회 대사 → 전신 순환 도달량 감소. 생체이용률 저하.' },
+
+  { id:421, type:'ox', lecture:'10강', category:'독성동태',
+    question:'독성물질의 흡수 속도는 일반적으로 호흡기 > 피부(경피) > 소화기(경구) 순이다.',
+    answer:true, explanation:'폐(호흡기): 표면적 70㎡, 혈관 풍부 → 가장 빠른 흡수. 경피는 지용성 물질에서 빠를 수 있음. 경구는 소화·간 통과 필요.' },
+
+  { id:422, type:'ox', lecture:'10강', category:'독성동태',
+    question:'휘발성 유기화합물(VOC)은 폐(호기)를 통해 배설되므로, 날숨(호기)에서 측정이 가능하다.',
+    answer:true, explanation:'폐 호기 배설: 에탄올(음주 측정), 아세톤, 벤젠 대사체 등 휘발성 물질. 호기 바이오마커 활용 가능.' },
+
+  { id:423, type:'ox', lecture:'11-12강', category:'경영시스템',
+    question:'OHSAS 18001은 2021년 9월에 ISO 45001로 완전히 대체되어 공식 폐지되었다.',
+    answer:true, explanation:'ISO 45001(2018년 발행) 후 3년 전환 기간. 2021년 9월 OHSAS 18001 폐지. ISO 45001로 완전 이전 완료.' },
+
+  { id:424, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'ALD(Atomic Layer Deposition, 원자층 증착)는 원자 한 층씩 순차적으로 박막을 증착하여 나노미터 이하 정밀도로 두께를 제어할 수 있다.',
+    answer:true, explanation:'ALD: 두 전구체를 교대로 공급하여 표면 반응으로 원자층 단위 증착. 10nm 이하 초미세 공정 게이트 절연막·배리어 막에 필수.' },
+
+  { id:425, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'CVD(화학기상증착)는 기상 화학물질의 반응으로 박막을 형성하고, PVD(물리기상증착)는 스퍼터링·열 증발 등 물리적 방법으로 박막을 형성한다.',
+    answer:true, explanation:'CVD: 기상 전구체 화학반응 증착(SiH₄→Si막). PVD: 스퍼터링·증발로 금속막 형성(Al·Ti·Cu 등). 원리가 완전히 다름.' },
+
+  { id:426, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'인듐(In)은 LCD·OLED 투명 전극에 사용되는 ITO의 구성 원소로, 분진 흡입 시 인듐폐증(폐포단백질증)을 유발할 수 있다.',
+    answer:true, explanation:'인듐(In): ITO(Indium Tin Oxide)=LCD/OLED 전극. In₂O₃ 분진 흡입 → 폐포단백질증(PAP, 인듐폐증). IARC 2A군.' },
+
+  { id:427, type:'ox', lecture:'11-12강', category:'탄소중립',
+    question:'EU ETS(배출권 거래제)는 온실가스 배출 총량을 설정(Cap)하고 배출권을 시장에서 거래(Trade)하는 탄소 감축 시장 메커니즘이다.',
+    answer:true, explanation:'ETS(Emission Trading System, Cap and Trade): 기업이 할당량 초과 시 배출권 구매, 여유분은 매도. 탄소 가격 형성.' },
+
+  { id:428, type:'ox', lecture:'11-12강', category:'탄소중립',
+    question:'2015년 파리 COP21에서 채택된 파리협정은 196개국이 참여하며, 국가결정기여(NDC)를 5년마다 제출·갱신해야 한다.',
+    answer:true, explanation:'파리협정(2015): 1.5°C 노력, 2°C 이하 유지. NDC(Nationally Determined Contribution) 5년 주기 갱신 의무.' },
+
+  { id:429, type:'ox', lecture:'11-12강', category:'제도·법규',
+    question:'화학물질관리법(화관법)은 환경부 소관으로 유해화학물질 제조·수입·사용의 허가·신고 및 사고 대응을 규정한다.',
+    answer:true, explanation:'화관법: 환경부 소관. ↔ 산안법(고용노동부): 작업장 안전보건. 화관법은 화학물질 취급 사업장·수송·영업 허가 규정.' },
+
+  { id:430, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'EUV(극자외선, 13.5nm) 노광은 ArF(193nm) 노광보다 파장이 짧아 더 미세한 회로 패턴 구현이 가능하다.',
+    answer:true, explanation:'EUV(Extreme UV, 13.5nm): 5nm 이하 초미세 공정에 필수. ArF(193nm)·KrF(248nm)보다 파장 훨씬 짧음. ASML 독점 공급.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 4차 추가 4지선다 (431~445)
+  ══════════════════════════════════════════════════ */
+
+  { id:431, type:'multiple', lecture:'9강', category:'독성 개념',
+    question:'LD50(반수치사량)의 올바른 정의는?',
+    options:['실험동물 10%를 사망시키는 투여량','실험동물 50%를 사망시키는 투여량','독성 영향이 처음 나타나는 최저 농도','법적 허용 노출기준의 절반'],
+    answer:1, explanation:'LD50(Lethal Dose 50): 집단의 50%를 사망시키는 투여량. mg/kg으로 표현. 낮을수록 독성 강함.' },
+
+  { id:432, type:'multiple', lecture:'9강', category:'독성 개념',
+    question:'급성독성과 만성독성의 비교로 올바른 것은?',
+    options:[
+      '급성독성은 저농도 반복 노출, 만성독성은 고농도 단기 노출',
+      '급성독성은 단기 고농도 노출로 빠르게 나타나고, 만성독성은 저농도 장기 반복 노출로 서서히 나타남',
+      '두 독성은 동일한 농도·시간에서 발생',
+      '만성독성은 항상 급성독성보다 회복이 쉽다',
+    ],
+    answer:1, explanation:'급성: 단기·고농도. 만성: 장기·저농도 반복. 직업성 질환 대부분이 만성독성(잠복기·다중원인·비특이성).' },
+
+  { id:433, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'독성물질의 흡수 속도를 빠른 순서대로 바르게 나열한 것은?',
+    options:['경구>호흡기>경피','호흡기>경피>경구','경피>경구>호흡기','경구>경피>호흡기'],
+    answer:1, explanation:'흡수 속도: 호흡기(폐, 표면적 70㎡·혈관 풍부) > 경피(지용성 물질) > 경구(소화·간 통과). 직업 노출에서 흡입이 가장 중요.' },
+
+  { id:434, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'1차 통과효과(First-pass Effect)가 가장 크게 나타나는 투여 경로는?',
+    options:['정맥 주사','흡입(호흡기)','경구(소화기)','경피(피부)'],
+    answer:2, explanation:'경구 투여: 흡수 → 간문맥 → 간 초회 대사 → 전신 도달량 감소. 정맥·흡입은 간 초회 통과 없음 → 생체이용률 높음.' },
+
+  { id:435, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'휘발성 독성물질의 주요 배설 경로는?',
+    options:['신장(소변)','대장(대변)','폐(호기, 날숨)','모유'],
+    answer:2, explanation:'휘발성 물질: 혈중 물질이 폐포에서 호기로 확산·배설. 에탄올(음주 측정), 아세톤·벤젠 대사체 호기 바이오마커 가능.' },
+
+  { id:436, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'CVD(화학기상증착) 공정에서 실리콘막(Si) 형성에 사용하는 원료 가스는?',
+    options:['아르곤(Ar)','실란(SiH₄)','질소(N₂)','산소(O₂)'],
+    answer:1, explanation:'CVD 실리콘막: SiH₄(실란) → 열분해 → Si막+H₂. 실란은 자연발화성으로 누출 시 즉시 화재 위험.' },
+
+  { id:437, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'PVD(물리기상증착)에서 금속막을 형성하는 주요 방법은?',
+    options:['기상 화학 반응(열분해)','스퍼터링(Sputtering) 또는 열 증발(Evaporation)','전기도금(Electroplating)','화학 에칭(Chemical Etching)'],
+    answer:1, explanation:'PVD: 스퍼터링(이온 충격→타깃 금속 원자 방출→기판 증착) 또는 열 증발. 화학 반응 없음. Al·Ti·W·Cu 배선 형성.' },
+
+  { id:438, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'ALD(원자층 증착)의 특징으로 옳은 것은?',
+    options:[
+      '한 번에 두꺼운 막을 빠르게 증착',
+      '원자 한 층씩 순차 증착으로 나노미터 이하 정밀 두께 제어',
+      'PVD의 일종으로 물리적 방법 사용',
+      '습식 화학 용액으로 박막을 형성',
+    ],
+    answer:1, explanation:'ALD: 두 전구체 교대 공급 → 표면 자기제한 반응 → 원자층 단위 증착. 10nm 이하 게이트 절연막·배리어 막 필수.' },
+
+  { id:439, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'LCD·OLED 디스플레이 투명 전극 재료인 ITO의 구성 원소는?',
+    options:['인듐(In)+구리(Cu)','인듐(In)+주석(Sn)','갈륨(Ga)+비소(As)','게르마늄(Ge)+실리콘(Si)'],
+    answer:1, explanation:'ITO(Indium Tin Oxide): 인듐(In)+주석(Sn)+산소(O). 투명 전도성막. LCD·OLED·터치스크린 전극에 사용.' },
+
+  { id:440, type:'multiple', lecture:'11-12강', category:'경영시스템',
+    question:'OHSAS 18001이 대체된 ISO 표준과 대체 완료 연도는?',
+    options:['ISO 14001, 2018','ISO 45001, 2021','ISO 9001, 2015','ISO 26000, 2010'],
+    answer:1, explanation:'ISO 45001 발행(2018) → 3년 전환 기간 → 2021년 9월 OHSAS 18001 공식 폐지. ISO 45001로 완전 대체.' },
+
+  { id:441, type:'multiple', lecture:'11-12강', category:'탄소중립',
+    question:'파리협정(Paris Agreement)에서 설정한 지구 평균 기온 상승 억제 목표는?',
+    options:['산업화 이전 대비 0.5°C 이내','산업화 이전 대비 1.5°C 이내(노력), 2°C 이하(최대)','현재 기온 대비 1°C 이내','2050년 이후 기온 변화 없음'],
+    answer:1, explanation:'파리협정: 1.5°C 이내 노력, 2°C 이하 유지가 공식 목표. NDC(국가결정기여) 5년마다 갱신 제출 의무.' },
+
+  { id:442, type:'multiple', lecture:'11-12강', category:'탄소중립',
+    question:'EU ETS(배출권 거래제, Cap and Trade)에 대한 설명으로 옳은 것은?',
+    options:[
+      '기업이 온실가스를 무제한 배출할 수 있는 제도',
+      '온실가스 배출 총량을 설정하고 배출권을 시장에서 거래하는 제도',
+      '탄소세(Carbon Tax)와 동일한 개념',
+      '개인에게만 적용되는 탄소 감축 규정',
+    ],
+    answer:1, explanation:'ETS(Emission Trading System): 총량(Cap) 설정 → 배출권 할당 → 초과분 구매·여유분 매도(Trade). 세계 최초 대규모: EU ETS(2005).' },
+
+  { id:443, type:'multiple', lecture:'11-12강', category:'제도·법규',
+    question:'화학물질관리법(화관법)의 소관 부처는?',
+    options:['고용노동부','환경부','산업통상자원부','보건복지부'],
+    answer:1, explanation:'화관법: 환경부 소관. 유해화학물질 영업허가·신고·취급기준·사고 신고. ↔ 산안법(고용노동부): 작업장 안전보건.' },
+
+  { id:444, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 노광 기술에서 파장이 가장 짧아 5nm 이하 초미세 패턴을 구현하는 광원은?',
+    options:['수은 UV 램프(436nm)','KrF 엑시머 레이저(248nm)','ArF 엑시머 레이저(193nm)','EUV 극자외선(13.5nm)'],
+    answer:3, explanation:'EUV(Extreme Ultraviolet, 13.5nm): 가장 짧은 파장 → 가장 미세한 패턴. 3~5nm 이하 공정에 필수. ASML이 독점 공급.' },
+
+  { id:445, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'인듐(In) 분진 흡입에 의한 직업성 폐질환은?',
+    options:['진폐증(Pneumoconiosis)','인듐폐증(폐포단백질증, PAP)','TMAH 폐독성','이소시아네이트 천식'],
+    answer:1, explanation:'인듐폐증(Indium Lung): In₂O₃·ITO 분진 흡입 → 폐포단백질증(PAP). LCD·OLED 제조 근로자에서 보고. IARC 2A군.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 4차 추가 빈칸 (446~455)
+  ══════════════════════════════════════════════════ */
+
+  { id:446, type:'fill', lecture:'9강', category:'독성 개념',
+    question:'실험동물 집단의 50%를 사망시키는 독성물질의 투여량을 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['LD50','반수치사량','Lethal Dose 50','LD₅₀']],
+    explanation:'LD50(Lethal Dose 50): 반수치사량. mg/kg 단위. 낮을수록 독성 강함. 동물실험으로 산출.' },
+
+  { id:447, type:'fill', lecture:'9강', category:'독성 개념',
+    question:'급성독성은 [①] 고농도 노출로 빠르게 나타나고, 만성독성은 저농도 [②] 반복 노출로 서서히 나타난다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['단기','단기간','단일'],['장기','장기간']],
+    explanation:'급성(단기·고농도·빠른 발현) vs 만성(장기·저농도·잠복기 긴 발현). 직업성 질환 대부분이 만성독성.' },
+
+  { id:448, type:'fill', lecture:'10강', category:'독성동태',
+    question:'경구 흡수된 물질이 전신 순환 전에 간에서 먼저 대사되어 생체이용률이 감소하는 현상을 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['1차통과효과','초회통과효과','First-pass Effect','first-pass effect','1차 통과효과','초회 통과 효과']],
+    explanation:'First-pass Effect(1차 통과효과): 경구 흡수 → 간문맥 → 간 초회 대사 → 전신 도달량 감소.' },
+
+  { id:449, type:'fill', lecture:'10강', category:'독성동태',
+    question:'독성물질의 흡수 속도를 빠른 순서로 나타내면 [①] > 피부(경피) > 소화기(경구)이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['호흡기','폐','흡입','호흡기(흡입)','Respiratory']],
+    explanation:'흡수 속도: 호흡기(폐) 가장 빠름. 폐 표면적 70㎡, 혈관 풍부 → 빠른 흡수. 직업 노출에서 흡입이 가장 중요한 경로.' },
+
+  { id:450, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'원자 한 층씩 순차적으로 박막을 증착하는 공정의 영문 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['ALD','원자층증착']],
+    explanation:'ALD(Atomic Layer Deposition): 원자층 단위 정밀 증착. 두 전구체 교대 공급 → 자기제한 반응. 10nm 이하 공정에 필수.' },
+
+  { id:451, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'스퍼터링·열 증발 등 물리적 방법으로 박막을 형성하는 공정의 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['PVD','물리기상증착','Physical Vapor Deposition']],
+    explanation:'PVD(Physical Vapor Deposition): 물리적 방법(스퍼터링·열 증발)으로 금속막 형성. 화학 반응 없음.' },
+
+  { id:452, type:'fill', lecture:'11-12강', category:'탄소중립',
+    question:'파리협정에서 합의한 지구 평균 기온 상승 최대 억제 목표는 산업화 이전 대비 [①]°C 이하이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['2','2.0']],
+    explanation:'파리협정: 2°C 이하(최대 목표), 1.5°C 이내(이상적 목표). NDC(국가결정기여) 5년마다 갱신 제출.' },
+
+  { id:453, type:'fill', lecture:'11-12강', category:'탄소중립',
+    question:'온실가스 배출 총량(Cap)을 설정하고 배출권을 시장에서 거래(Trade)하는 탄소 감축 제도를 [①]라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['ETS','배출권거래제','배출권 거래제','Emission Trading System']],
+    explanation:'ETS(Emission Trading System): Cap and Trade. 배출 총량 설정 → 배출권 할당 → 초과·여유분 거래. EU ETS(2005)가 세계 최초.' },
+
+  { id:454, type:'fill', lecture:'11-12강', category:'경영시스템',
+    question:'OHSAS 18001은 [①]년에 ISO 45001로 완전히 대체·폐지되었다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['2021']],
+    explanation:'ISO 45001 발행(2018) → 3년 전환 기간 → 2021년 9월 OHSAS 18001 공식 폐지.' },
+
+  { id:455, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'LCD·OLED 디스플레이 투명 전극에 사용되는 인듐 화합물의 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['ITO','인듐주석산화물']],
+    explanation:'ITO(Indium Tin Oxide, 인듐주석산화물): 투명 전도성 재료. LCD/OLED 전극. In₂O₃ 분진 흡입 → 인듐폐증(PAP).' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 4차 추가 설명 맞추기 (456~465)
+  ══════════════════════════════════════════════════ */
+
+  { id:456, type:'match', lecture:'9강', category:'독성 개념',
+    question:'다음 설명이 가리키는 것은?\n\n"실험동물 집단의 50%를 사망시키는 독성물질 투여량. mg/kg 단위. 이 값이 낮을수록 독성이 강함"',
+    options:['NOAEL(무관찰독성량)','LOAEL(최저관찰독성량)','LD50(반수치사량)','BEI(생물학적노출지수)'],
+    answer:2, explanation:'LD50(Lethal Dose 50): 반수치사량. 독성 강도 비교 지표. LD50↓=독성↑. 동물실험으로 산출.' },
+
+  { id:457, type:'match', lecture:'10강', category:'독성동태',
+    question:'다음 설명이 가리키는 것은?\n\n"경구 흡수된 약물·독성물질이 전신 순환 전 간문맥을 통해 간에서 먼저 대사되어 활성 물질 양이 감소하는 현상. 생체이용률 저하"',
+    options:['생물학적 반감기','분포(Distribution)','1차 통과효과(First-pass Effect)','장간순환'],
+    answer:2, explanation:'First-pass Effect: 경구 흡수→간문맥→간 초회 대사→전신 도달량 감소. 경피·흡입·정맥은 이 효과 없음.' },
+
+  { id:458, type:'match', lecture:'11-12강', category:'탄소중립',
+    question:'다음 설명이 가리키는 것은?\n\n"2015년 파리 COP21에서 채택된 기후변화 국제협약. 1.5°C 노력/2°C 이하 유지 목표. 196국 참여. NDC 5년 주기 제출 의무"',
+    options:['교토의정서','유엔기후변화협약(UNFCCC)','파리협정(Paris Agreement)','RE100'],
+    answer:2, explanation:'파리협정(2015, COP21): 196국 참여. 1.5°C 노력/2°C 이하 유지. 5년마다 NDC 갱신. 2016년 발효.' },
+
+  { id:459, type:'match', lecture:'11-12강', category:'탄소중립',
+    question:'다음 설명이 가리키는 것은?\n\n"온실가스 배출 총량(Cap)을 설정하고, 배출권을 부여하여 초과·여유분을 시장에서 거래(Trade)하는 탄소 감축 제도. EU ETS(2005)가 세계 최초"',
+    options:['탄소세(Carbon Tax)','CBAM(탄소국경조정)','ETS(배출권 거래제)','RE100'],
+    answer:2, explanation:'ETS(Cap and Trade): 총량 설정+배출권 거래. 탄소세는 단위당 고정 세금 부과. 두 개념은 다름.' },
+
+  { id:460, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"두 가지 전구체를 교대 공급하여 표면 자기제한 반응으로 원자 한 층씩 박막 증착. 10nm 이하 게이트 절연막·배리어 막 형성에 필수"',
+    options:['CVD(화학기상증착)','PVD(물리기상증착)','ALD(원자층증착)','스퍼터링'],
+    answer:2, explanation:'ALD(Atomic Layer Deposition): 원자층 단위 정밀 증착. 두께 angstrom 수준 제어. 전구체 교대 노출로 자기제한 반응.' },
+
+  { id:461, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"LCD·OLED·터치스크린 투명 전극에 사용되는 인듐 화합물. 분진 흡입 시 폐포단백질증(인듐폐증) 유발. IARC 2A군"',
+    options:['IPA(이소프로필알코올)','BF₃(삼불화붕소)','ITO(인듐주석산화물)','TMAH'],
+    answer:2, explanation:'ITO(Indium Tin Oxide): LCD/OLED 투명전극. In₂O₃ 분진 흡입 → 인듐폐증(PAP, 폐포단백질증). 디스플레이 제조 직업병.' },
+
+  { id:462, type:'match', lecture:'11-12강', category:'경영시스템',
+    question:'다음 설명이 가리키는 것은?\n\n"2018년 발행 후 2021년 9월 OHSAS 18001을 완전히 대체한 안전보건경영시스템 ISO 국제표준"',
+    options:['ISO 9001','ISO 14001','ISO 45001','ISO 26000'],
+    answer:2, explanation:'ISO 45001(2018년 발행, 2021년 OHSAS 18001 대체 완료): PDCA 기반. CEO 리더십·위험성평가·근로자 참여 강조.' },
+
+  { id:463, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"파장 13.5nm의 극자외선을 사용하는 반도체 노광 장비. 5nm 이하 초미세 패턴 구현. ASML 독점 공급"',
+    options:['수은 UV 램프 노광','KrF 엑시머 레이저(248nm)','ArF 엑시머 레이저(193nm)','EUV(극자외선) 노광'],
+    answer:3, explanation:'EUV(Extreme Ultraviolet, 13.5nm): 3~5nm 이하 초미세 공정 필수. ArF(193nm, DUV)의 한계 극복. ASML 독점.' },
+
+  { id:464, type:'match', lecture:'10강', category:'독성동태',
+    question:'다음 설명이 가리키는 것은?\n\n"에탄올·아세톤·벤젠 등 휘발성 독성물질이 혈액에서 폐포로 확산되어 날숨(호기)으로 배설되는 경로. 호기 바이오마커 측정 가능"',
+    options:['장간순환(Enterohepatic Circulation)','신장 배설(Renal Excretion)','폐 호기 배설(Pulmonary Excretion)','모유 배설(Mammary Excretion)'],
+    answer:2, explanation:'폐 호기 배설: 휘발성 물질의 주요 배설 경로. 에탄올(음주 측정), 아세톤, 벤젠 대사체 호기에서 측정 가능.' },
+
+  { id:465, type:'match', lecture:'11-12강', category:'제도·법규',
+    question:'다음 설명이 가리키는 것은?\n\n"유해화학물질 제조·수입·사용 허가·신고, 취급기준, 사고 신고·수습을 환경부가 관장하는 법률. 산업안전보건법(고용노동부)과 구분"',
+    options:['산업안전보건법(산안법)','화학물질관리법(화관법)','산업재해보상보험법(산재법)','고압가스안전관리법'],
+    answer:1, explanation:'화관법(화학물질관리법): 환경부 소관. 화학물질 취급 사업장 등록·관리·사고 대응. ↔ 산안법: 고용노동부, 작업장 안전보건.' },
+
 ];
 
 /* ══════════════════════════════════════════════════
