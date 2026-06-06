@@ -1,7 +1,16 @@
 import { useState } from 'react'
 
+// 아래첨자·위첨자 → 일반 숫자로 변환 후 비교 (AsH₃ == AsH3 처리)
+const SUB_MAP = { '₀':'0','₁':'1','₂':'2','₃':'3','₄':'4','₅':'5','₆':'6','₇':'7','₈':'8','₉':'9',
+                  '⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9',
+                  '⁺':'+','⁻':'-','⁶':6,'⁶':'6' }
+
 function normalize(s) {
-  return String(s).trim().toLowerCase().replace(/\s+/g, '')
+  return String(s)
+    .trim()
+    .toLowerCase()
+    .replace(/[₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻]/g, c => SUB_MAP[c] ?? c)
+    .replace(/[^a-z0-9가-힣+\-]/g, '') // 괄호·점·쉼표 제거, 한글·영숫자·부호만 남김
 }
 
 export default function FillQuestion({ q, answered, onAnswer }) {
@@ -9,9 +18,7 @@ export default function FillQuestion({ q, answered, onAnswer }) {
   const [result, setResult] = useState(null)
 
   const handleChange = (i, v) => {
-    const next = [...values]
-    next[i] = v
-    setValues(next)
+    const next = [...values]; next[i] = v; setValues(next)
   }
 
   const handleSubmit = () => {
@@ -37,7 +44,7 @@ export default function FillQuestion({ q, answered, onAnswer }) {
               onChange={e => handleChange(i, e.target.value)}
               onKeyDown={e => e.key === 'Enter' && !answered && handleSubmit()}
               disabled={answered}
-              placeholder={`${blank.label} 에 들어갈 답을 입력하세요`}
+              placeholder={`${blank.label}에 들어갈 답을 입력하세요`}
               className={`w-full px-4 py-3 rounded-xl border-2 text-gray-800 font-medium text-sm outline-none transition-all disabled:cursor-not-allowed ${borderCls}`}
             />
           </div>
