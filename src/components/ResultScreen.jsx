@@ -17,6 +17,7 @@ const TYPE_LABELS = {
   fill: '빈칸',
   short: '주관식',
   match: '설명맞추기',
+  order: '순서맞추기',
 }
 
 export default function ResultScreen({ results, onRestart, onRestartSame }) {
@@ -82,8 +83,12 @@ export default function ResultScreen({ results, onRestart, onRestartSame }) {
                     <span className="text-gray-700">
                       {item.q.type === 'fill'
                         ? item.q.answers.map(a => a[0]).join(' / ')
-                        : item.q.type === 'multiple' || item.q.type === 'match'
+                        : item.q.type === 'multiple'
                         ? item.q.options[item.q.answer]
+                        : item.q.type === 'match'
+                        ? item.q.answer
+                        : item.q.type === 'order'
+                        ? item.q.answer.map(i => item.q.items[i]).join(' → ')
                         : item.q.modelAnswer}
                     </span>
                   </div>

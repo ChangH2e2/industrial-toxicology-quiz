@@ -3,12 +3,14 @@ import MultipleQuestion from './questions/MultipleQuestion'
 import FillQuestion from './questions/FillQuestion'
 import ShortQuestion from './questions/ShortQuestion'
 import MatchQuestion from './questions/MatchQuestion'
+import OrderQuestion from './questions/OrderQuestion'
 
 const TYPE_LABELS = {
   multiple: { label: '4지선다', icon: '📝', color: 'blue' },
   fill: { label: '빈칸채우기', icon: '✏️', color: 'violet' },
   short: { label: '주관식', icon: '💭', color: 'orange' },
   match: { label: '설명 맞추기', icon: '🔗', color: 'rose' },
+  order: { label: '순서 맞추기', icon: '🔢', color: 'teal' },
 }
 
 const BADGE_COLOR = {
@@ -16,6 +18,7 @@ const BADGE_COLOR = {
   violet:  'bg-violet-100 text-violet-700',
   orange:  'bg-orange-100 text-orange-700',
   rose:    'bg-rose-100 text-rose-700',
+  teal:    'bg-teal-100 text-teal-700',
 }
 
 export default function QuizScreen({ settings, onFinish, onGoHome }) {
@@ -112,6 +115,7 @@ export default function QuizScreen({ settings, onFinish, onGoHome }) {
             {q.type === 'fill'     && <FillQuestion      q={q} answered={answered} onAnswer={handleAnswer} />}
             {q.type === 'short'    && <ShortQuestion     q={q} answered={answered} onAnswer={handleAnswer} />}
             {q.type === 'match'    && <MatchQuestion     q={q} answered={answered} onAnswer={handleAnswer} />}
+            {q.type === 'order'    && <OrderQuestion     q={q} answered={answered} onAnswer={handleAnswer} />}
           </div>
 
           {/* 해설 박스 */}
@@ -127,8 +131,12 @@ export default function QuizScreen({ settings, onFinish, onGoHome }) {
                   <span className="font-normal text-sm">
                     {q.type === 'fill'
                       ? `정답: ${q.answers.map(a => a[0]).join(', ')}`
-                      : q.type === 'multiple' || q.type === 'match'
+                      : q.type === 'multiple'
                       ? `정답: ${q.options[q.answer]}`
+                      : q.type === 'match'
+                      ? `정답: ${q.answer}`
+                      : q.type === 'order'
+                      ? `정답 순서: ${q.answer.map(i => q.items[i]).join(' → ')}`
                       : ''}
                   </span>
                 )}
