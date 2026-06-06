@@ -734,6 +734,416 @@ export const questions = [
     options:['에피택시(Epitaxy)','금속증착(Metallization)','패키징/테스트(Packaging/Test)','포토리소그래피'],
     answer:2, explanation:'패키징(후공정): 웨이퍼 → 칩 절단 → 조립 → 포장. 전공정(Fab)과 구별.' },
 
+  /* ══════════════════════════════════════════════════
+     ★ 추가 OX (25문제, 131~155)
+  ══════════════════════════════════════════════════ */
+
+  { id:131, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)은 혈액 내 ALAD(아미노레불린산 탈수효소)를 억제하여 헴(Heme) 합성을 방해한다.',
+    answer:true, explanation:'ALAD 억제 → δ-ALA 혈중 축적 → 헴 합성 장애 → 빈혈. ZPP 증가도 관찰.' },
+
+  { id:132, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'원소수은(Hg⁰)은 상온에서 증기를 발생시키며, 호흡기를 통해 주로 흡수된다.',
+    answer:true, explanation:'원소수은 증기 흡입이 주요 노출 경로. 무기수은(Hg²⁺)은 주로 신장에 축적.' },
+
+  { id:133, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd)의 표적 장기는 신장이며, 세뇨관 손상 시 β₂-마이크로글로불린이 소변으로 배출된다.',
+    answer:true, explanation:'카드뮴 → 신장 세뇨관 손상 → 재흡수 장애 → β₂-마이크로글로불린 소변 배출 증가.' },
+
+  { id:134, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'니켈(Ni)은 접촉성 피부염(니켈 알레르기)과 폐암·비강암을 유발할 수 있다.',
+    answer:true, explanation:'니켈: IARC 1군. 피부 알레르기(가장 흔한 금속 알레르기)와 흡입 시 폐암.' },
+
+  { id:135, type:'ox', lecture:'9강', category:'발암성',
+    question:'베릴륨(Be)은 IARC 1군 발암물질로, 과다 노출 시 만성 베릴륨증(폐육아종증)이 발생한다.',
+    answer:true, explanation:'베릴륨: 항공우주·전자 부품에 사용. 호흡기 흡입 → 면역매개 폐육아종증.' },
+
+  { id:136, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'6가 크롬(Cr⁶⁺)의 주요 체내 흡수 경로는 피부이다.',
+    answer:false, explanation:'6가 크롬의 주요 흡수 경로는 호흡기(도금·용접 흄). 피부 경로도 가능하나 주경로는 호흡기.' },
+
+  { id:137, type:'ox', lecture:'9강', category:'방사성 원소',
+    question:'방사성 원소의 반감기(Half-life)는 온도·압력에 무관하게 일정한 물리적 상수이다.',
+    answer:true, explanation:'반감기는 핵의 고유 특성. 화학반응과 달리 온도·압력에 영향받지 않음.' },
+
+  { id:138, type:'ox', lecture:'9강', category:'방사성 원소',
+    question:'알파(α)선은 외부 피폭보다 내부 피폭(흡입·섭취) 시 생물학적 위해가 더 크다.',
+    answer:true, explanation:'알파선은 투과력이 약해 피부 통과 못 하지만, 내부에서 방출 시 주변 조직을 강하게 손상.' },
+
+  { id:139, type:'ox', lecture:'9강', category:'방사성 원소',
+    question:'핵융합(Nuclear Fusion)은 현재 상용 원자력 발전소에서 주로 사용하는 방식이다.',
+    answer:false, explanation:'상용 원전은 핵분열(Fission) 이용. 핵융합은 아직 연구 단계(ITER 프로젝트 등).' },
+
+  { id:140, type:'ox', lecture:'9강', category:'신경독성',
+    question:'납(Pb) 노출 시 아연 대신 납이 포르피린 고리에 결합해 ZPP(아연프로토포르피린)이 형성된다.',
+    answer:true, explanation:'ZPP: Zn 대신 Pb가 결합된 비정상 헴 전구체. 납의 영향 바이오마커로 혈액에서 측정.' },
+
+  { id:141, type:'ox', lecture:'10강', category:'독성 개념',
+    question:'NOAEL(무관찰 독성량)은 독성 영향이 관찰되지 않는 최고 용량이다.',
+    answer:true, explanation:'NOAEL(No Observed Adverse Effect Level). LOAEL은 독성이 처음 관찰되는 최저 용량.' },
+
+  { id:142, type:'ox', lecture:'10강', category:'독성동태',
+    question:'지용성(fat-soluble) 독성물질은 수용성 물질보다 피부를 통해 더 잘 흡수된다.',
+    answer:true, explanation:'피부는 지질이중막 구조라 지용성이 더 잘 통과. 유기용제·농약 등이 해당.' },
+
+  { id:143, type:'ox', lecture:'10강', category:'독성동태',
+    question:'무기수은(Hg²⁺)은 주로 신장에, 유기수은(메틸수은)은 주로 중추신경계에 축적된다.',
+    answer:true, explanation:'무기수은 → 신장(단백질 결합). 유기수은(지용성) → 혈뇌장벽 통과 → 뇌·신경계.' },
+
+  { id:144, type:'ox', lecture:'10강', category:'바이오마커',
+    question:'모발(Hair) 바이오마커는 혈액·소변 바이오마커에 비해 과거 장기간 노출을 추정하는 데 유리하다.',
+    answer:true, explanation:'모발은 월 약 1cm 성장. 분절 분석 → 수개월 노출 이력 파악 가능.' },
+
+  { id:145, type:'ox', lecture:'11-12강', category:'경영시스템',
+    question:'ISO 국제표준은 강제적 법적 기준이 아닌 자발적 참여 기준이다.',
+    answer:true, explanation:'ISO는 자발적(voluntary) 국제표준. 단, 법령·계약·구매 조건에 의해 사실상 의무화되는 경우도 있음.' },
+
+  { id:146, type:'ox', lecture:'12-13강', category:'반도체 안전',
+    question:'실란(SiH₄)은 공기 중에서 자연발화(Pyrophoric)하는 특성이 있어 화재·폭발 위험이 있다.',
+    answer:true, explanation:'실란 누출 시 공기와 반응하여 불꽃 없이도 발화. 반도체 공정의 주요 화재원인.' },
+
+  { id:147, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'포스핀(PH₃)은 반도체 P형(p-type) 도핑에 사용되는 가스이다.',
+    answer:false, explanation:'포스핀(PH₃)은 인(P) 공급원으로 N형(n-type) 도핑에 사용. P형에는 붕소계 가스(BF₃, B₂H₆) 사용.' },
+
+  { id:148, type:'ox', lecture:'13-14강', category:'반도체 안전',
+    question:'불산(HF) 피부 접촉 즉시 응급처치로 글루콘산 칼슘(Calcium Gluconate) 겔을 도포한다.',
+    answer:true, explanation:'Ca²⁺ 보충으로 F⁻ 이온 중화. 글루콘산칼슘 겔 도포는 불산 피부 노출의 필수 응급처치.' },
+
+  { id:149, type:'ox', lecture:'12-13강', category:'반도체 기초',
+    question:'반도체 클린룸의 ISO 등급 숫자가 낮을수록 더 청정한 환경이다.',
+    answer:true, explanation:'ISO Class 1이 가장 청정. 반도체 전공정은 Class 1~5 수준. 숫자↓ = 허용 파티클 수↓.' },
+
+  { id:150, type:'ox', lecture:'13-14강', category:'SEMI',
+    question:'SEMI S2는 반도체 장비 환경·안전·보건(EHS) 가이드라인이다.',
+    answer:true, explanation:'SEMI S2: EHS(Environmental Health Safety) Guideline for Semiconductor Manufacturing Equipment.' },
+
+  { id:151, type:'ox', lecture:'13-14강', category:'SEMI',
+    question:'SEMI S8은 반도체 장비 위험성평가(Risk Assessment) 방법에 관한 가이드라인이다.',
+    answer:false, explanation:'S8은 반도체 장비 인간공학(Ergonomics) 가이드라인. 위험성평가는 SEMI S10.' },
+
+  { id:152, type:'ox', lecture:'11-12강', category:'연관·인과',
+    question:'Hill의 인과기준에는 연관의 강도(Strength), 일관성(Consistency), 시간적 선행성(Temporality), 노출-반응 관계가 포함된다.',
+    answer:true, explanation:'Hill\'s criteria 9가지: 강도·일관성·특이성·시간성·노출반응관계·실험성·생물학적개연성·유추·일관성.' },
+
+  { id:153, type:'ox', lecture:'11-12강', category:'탄소중립',
+    question:'우리나라의 2050 탄소중립 목표는 온실가스 순 배출량(Net Emission) 제로(Zero)이다.',
+    answer:true, explanation:'넷제로(Net Zero) = 탄소중립: 온실가스 배출량 = 흡수·제거량. 한국 2050 탄소중립 공식 목표.' },
+
+  { id:154, type:'ox', lecture:'12-13강', category:'반도체 기초',
+    question:'반도체 자동물류시스템(AMHS)은 클린룸 내 웨이퍼를 작업자 없이 자동으로 운반한다.',
+    answer:true, explanation:'AMHS(Automated Material Handling System): 천장 OHT로 FOUP 자동 이송. 작업자 노출 최소화.' },
+
+  { id:155, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'건식식각(Dry Etching)은 불산(HF) 수용액을 사용하는 식각 방법이다.',
+    answer:false, explanation:'건식식각 = 플라즈마(기체) 이용. 습식식각(Wet Etching)이 불산(HF) 수용액 사용.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 4지선다 (25문제, 156~180)
+  ══════════════════════════════════════════════════ */
+
+  { id:156, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb) 노출 시 억제되어 헴(Heme) 합성 장애와 빈혈을 일으키는 효소는?',
+    options:['ALT(아미노기전달효소)','ALAD(아미노레불린산 탈수효소)','AChE(아세틸콜린에스테라제)','SOD(초산화물 불균등화효소)'],
+    answer:1, explanation:'ALAD(δ-Aminolevulinic Acid Dehydratase) 억제 → δ-ALA 혈중 축적 → 헴 합성 장애 → 빈혈.' },
+
+  { id:157, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'원소수은(Hg⁰)이 인체에 흡수되는 주요 경로는?',
+    options:['피부(경피)','소화기(경구)','호흡기(흡입)','눈(결막)'],
+    answer:2, explanation:'원소수은은 상온에서 증기 발생. 호흡기 흡수가 주 경로. 무기수은(Hg²⁺)은 경구가 주.' },
+
+  { id:158, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd) 노출에 의한 신장 세뇨관 손상의 소변 바이오마커는?',
+    options:['t,t-뮤콘산(소변)','β₂-마이크로글로불린(소변)','ZPP(혈액)','코티닌(혈액)'],
+    answer:1, explanation:'β₂-마이크로글로불린: 정상 세뇨관에서 재흡수되나 손상 시 소변 배출 증가 → 카드뮴 신독성 지표.' },
+
+  { id:159, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 중 반도체 N형(n-type) 도핑에 사용하지 않는 도판트는?',
+    options:['비소(As)','인(P)','붕소(B)','안티몬(Sb)'],
+    answer:2, explanation:'붕소(B)는 p-type 도판트(정공 생성). n-type 도판트: As(비소), P(인), Sb(안티몬).' },
+
+  { id:160, type:'multiple', lecture:'12-13강', category:'반도체 안전',
+    question:'실란(SiH₄)의 가장 큰 위험 특성은?',
+    options:['ppm 수준에서 치명적인 독성','공기 중 자연발화(Pyrophoric) 특성','강산성으로 피부 화학화상 유발','피부 침투로 심장마비 유발'],
+    answer:1, explanation:'실란 누출 시 공기 중 즉시 자연발화. 불꽃 불필요. 화재·폭발 위험. 누출 감지 후 즉시 대피.' },
+
+  { id:161, type:'multiple', lecture:'9강', category:'아르신',
+    question:'다음 중 NIOSH IDLH(즉시 위험 농도) 기준이 가장 낮은(엄격한) 물질은?',
+    options:['아르신(AsH₃) - 3 ppm','포스핀(PH₃) - 50 ppm','실란(SiH₄) - 3,000 ppm','암모니아(NH₃) - 300 ppm'],
+    answer:0, explanation:'아르신 IDLH=3 ppm, PEL=0.05 ppm으로 극독성. 포스핀도 위험하지만 아르신이 더 낮은 기준.' },
+
+  { id:162, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 포토리소그래피에서 노광 후 PR 현상(Development)에 사용되는 물질은?',
+    options:['황산(H₂SO₄)','TMAH(테트라메틸암모늄수산화물)','불산(HF)','염산(HCl)'],
+    answer:1, explanation:'TMAH는 반도체 현상액(Developer)으로 사용. 노광된 PR을 선택적으로 제거하여 회로 패턴 형성.' },
+
+  { id:163, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 건식식각(Dry Etching)에 사용되는 주요 방법은?',
+    options:['불산(HF) 용액 침지','황산·과산화수소 혼합 용액','플라즈마(Plasma) 식각','순수(DI Water) 세척'],
+    answer:2, explanation:'건식식각 = 플라즈마 이용 식각(RIE, ICP 등). 습식식각이 화학 용액(HF 등) 이용.' },
+
+  { id:164, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'생체변환 2상 반응(Phase II Biotransformation)에 해당하는 것은?',
+    options:['CYP450에 의한 산화반응','환원(Reduction) 반응','가수분해(Hydrolysis) 반응','글루쿠론산 포합(Glucuronidation)'],
+    answer:3, explanation:'2상 반응 = 포합(Conjugation) 반응: 글루쿠론산·황산·글리신·글루타치온 등과 결합. 수용성↑ → 배설↑.' },
+
+  { id:165, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'불산(HF) 전신 독성 시 저칼슘혈증 교정을 위해 정맥 투여하는 응급 약물은?',
+    options:['글루타치온(GSH)','글루콘산 칼슘(Calcium Gluconate)','황산나트륨(Na₂SO₄)','아드레날린(Epinephrine)'],
+    answer:1, explanation:'글루콘산 칼슘 정주: F⁻ 이온이 Ca²⁺와 결합 → 혈중 Ca²⁺ 급감 → 심장마비 예방 목적.' },
+
+  { id:166, type:'multiple', lecture:'11-12강', category:'연관·인과',
+    question:'Hill의 인과기준(Bradford Hill\'s criteria)에 포함되지 않는 것은?',
+    options:['연관의 강도(Strength of Association)','시간적 선행성(Temporality)','생물학적 개연성(Biological Plausibility)','경제적 비용-편익 분석(Cost-Benefit Analysis)'],
+    answer:3, explanation:'Hill 기준 9가지: 강도·일관성·특이성·시간성·노출반응관계·실험성·개연성·유추·일관성. 경제성은 포함되지 않음.' },
+
+  { id:167, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 P형(p-type) 반도체 제조에 사용하는 도판트 가스로 옳은 것은?',
+    options:['아르신(AsH₃)','포스핀(PH₃)','디보란(B₂H₆)','실란(SiH₄)'],
+    answer:2, explanation:'디보란(B₂H₆) 또는 BF₃는 붕소(B) 공급원으로 p-type 도핑에 사용. 붕소는 정공(hole) 생성.' },
+
+  { id:168, type:'multiple', lecture:'13-14강', category:'SEMI',
+    question:'SEMI S14가 다루는 주요 내용은?',
+    options:['위험성평가(Risk Assessment)','화재·가스 감지 시스템(Fire Risk & Gas Detection)','인간공학(Ergonomics)','초순수(Ultra Pure Water) 품질'],
+    answer:1, explanation:'SEMI S14: Safety Guideline for Fire Risk Assessment — 화재 위험성 평가 및 가스 감지 관련.' },
+
+  { id:169, type:'multiple', lecture:'11-12강', category:'탄소중립',
+    question:'UN이 2015년 채택한 지속가능발전목표(SDGs)는 총 몇 가지 목표로 구성되어 있는가?',
+    options:['7가지','12가지','17가지','21가지'],
+    answer:2, explanation:'SDGs: 17 Goals, 169 Targets. 2030 Agenda for Sustainable Development. ESG 평가 기준과 연계.' },
+
+  { id:170, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 포토리소그래피 공정에서 생식독성 우려가 가장 큰 물질군은?',
+    options:['황산·과산화수소','Glycol ethers(글리콜 에테르)','불산(HF)','아르신(AsH₃)'],
+    answer:1, explanation:'Glycol ethers(methoxyethanol, ethoxyethanol 등): PR 용제로 사용. 난소·정소 독성으로 생식독성 인정.' },
+
+  { id:171, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'산소결핍 환경(O₂ < 18%)에서 사용해야 하는 올바른 호흡 보호구는?',
+    options:['방진 마스크(P등급)','방독 마스크(유기증기 카트리지)','공기 공급식 마스크(SCBA)','활성탄 마스크'],
+    answer:2, explanation:'SCBA(Self-Contained Breathing Apparatus): 자체 공기 공급. 방독마스크는 필터 방식이라 산소결핍 시 사용 불가.' },
+
+  { id:172, type:'multiple', lecture:'11-12강', category:'탄소중립',
+    question:'기업 온실가스 배출 분류에서 "Scope 3"에 해당하는 것은?',
+    options:['자사 연료 연소에서 직접 배출','구매 전력에서 간접 배출','공급망·소비자 사용 등 가치사슬 전체 간접 배출','자사 건물 냉난방 배출'],
+    answer:2, explanation:'Scope 1: 직접 배출. Scope 2: 구매 전력 간접. Scope 3: 공급망·소비·폐기 등 가치사슬 전체.' },
+
+  { id:173, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 배선(Interconnect)에서 저저항 특성으로 최근 주류가 된 금속은?',
+    options:['알루미늄(Al)','구리(Cu)','철(Fe)','니켈(Ni)'],
+    answer:1, explanation:'구리(Cu)는 알루미늄보다 저항이 낮아 현재 반도체 배선의 주류. 다마신(Damascene) 공법으로 증착.' },
+
+  { id:174, type:'multiple', lecture:'10강', category:'독성 개념',
+    question:'독성학에서 "LOAEL"이 의미하는 것은?',
+    options:['독성 영향이 없는 최고 용량(NOAEL)','독성 영향이 처음 관찰되는 최저 용량','치사 용량의 50%(LD50)','법적 허용 노출 기준'],
+    answer:1, explanation:'LOAEL(Lowest Observed Adverse Effect Level): 독성 영향이 처음 관찰되는 최저 용량. NOAEL 바로 위 단계.' },
+
+  { id:175, type:'multiple', lecture:'12-13강', category:'반도체 안전',
+    question:'반도체 공장 여성 근로자에서 보고된 건강 영향이 아닌 것은?',
+    options:['자연유산(SAB) 증가','생리불순·무월경','선천성 기형','납(Pb) 중독에 의한 빈혈'],
+    answer:3, explanation:'반도체 공장 여성 건강 문제: 생식독성(자연유산, 불임, 생리이상)이 주요 이슈. 납 중독은 반도체 특이 문제 아님.' },
+
+  { id:176, type:'multiple', lecture:'13-14강', category:'SEMI',
+    question:'다음 SEMI 표준과 내용의 연결 중 잘못된 것은?',
+    options:['S2 – 장비 환경·안전·보건 가이드라인','S8 – 장비 인간공학 가이드라인','S10 – 위험성평가 가이드라인','F63 – 클린룸 청정도 등급 기준'],
+    answer:3, explanation:'F63은 반도체 공정용 초순수(UPW) 품질 기준. 클린룸 청정도는 ISO 14644 기준.' },
+
+  { id:177, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'대사 활성화(Bioactivation)의 예로 옳은 것은?',
+    options:['아세트아미노펜 → 파라세타몰(해열 효과)','알코올 → CO₂+H₂O(완전 무독화)','벤젠 → 벤젠에폭사이드(골수독성 증가)','납 → 납 황화물(불용성)'],
+    answer:2, explanation:'벤젠 → 에폭사이드(CYP2E1) → 골수독성·AML 유발. 1상 반응에서 독성이 강화되는 대표 예.' },
+
+  { id:178, type:'multiple', lecture:'11-12강', category:'제도·법규',
+    question:'우리나라 산업안전보건법상 특수건강검진의 주요 목적은?',
+    options:['일반 성인병 조기 발견','유해물질 노출 근로자의 건강 영향 조기 발견','사망 원인 통계 수집','작업장 공기 중 농도 측정'],
+    answer:1, explanation:'특수건강검진: 특정 유해물질 노출 근로자 대상. 직업성 건강 영향 조기 발견이 목적.' },
+
+  { id:179, type:'multiple', lecture:'12-13강', category:'반도체 기초',
+    question:'반도체 전공정(Fab)을 영문 약자로 올바르게 표현한 것은?',
+    options:['BEOL(Back-End of Line)','FEOL(Front-End of Line)','MOL(Middle of Line)','CMP(Chemical Mechanical Planarization)'],
+    answer:1, explanation:'Fab(전공정) = FEOL(Front-End of Line). 후공정(패키징) = BEOL(Back-End of Line).' },
+
+  { id:180, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'반도체 공장 정비 작업 전 설비 내 잔류 유해가스를 제거하는 퍼지(Purge)에 주로 사용하는 기체는?',
+    options:['산소(O₂)','이산화탄소(CO₂)','질소(N₂)','수소(H₂)'],
+    answer:2, explanation:'퍼지는 주로 불활성인 질소(N₂)로 잔류 가스를 밀어냄. 단 밀폐공간에서는 질소 자체가 산소결핍 유발 위험.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 빈칸 채우기 (15문제, 181~195)
+  ══════════════════════════════════════════════════ */
+
+  { id:181, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)은 혈중 [①] 효소를 억제하여 헴(Heme) 합성 장애와 빈혈을 유발한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['ALAD','δ-ALAD','아미노레불린산탈수효소','ALA탈수효소']],
+    explanation:'ALAD 억제 → δ-ALA 혈중 축적 → 헴 합성 차단. 혈중 ZPP 증가도 관찰.' },
+
+  { id:182, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd) 신장 세뇨관 손상의 소변 바이오마커는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['β2마이크로글로불린','β₂마이크로글로불린','베타2마이크로글로불린','b2마이크로글로불린']],
+    explanation:'카드뮴 → 신장 세뇨관 재흡수 장애 → β₂-마이크로글로불린 소변 배출 증가.' },
+
+  { id:183, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 P형(p-type) 도핑에 사용되는 원소는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['붕소','B','Boron','boron']],
+    explanation:'붕소(B)는 p-type 도판트(정공 생성). N형에는 As(비소), P(인).' },
+
+  { id:184, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 식각 공정 중 플라즈마를 이용한 방법을 [①] 식각이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['건식','건식(Dry)','Dry','드라이']],
+    explanation:'건식(Dry) 식각 = 플라즈마 이용. 습식(Wet) 식각 = HF 등 화학 용액 이용.' },
+
+  { id:185, type:'fill', lecture:'10강', category:'독성동태',
+    question:'생체변환 1상 반응에서 주요하게 관여하는 효소군은 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['CYP450','시토크롬P450','사이토크롬P450','Cytochrome P450','CYP']],
+    explanation:'CYP450(Cytochrome P450): 간에 주로 분포. 1상 산화·환원·가수분해 반응 촉매.' },
+
+  { id:186, type:'fill', lecture:'12-13강', category:'반도체 안전',
+    question:'공기 중에서 자연발화(Pyrophoric) 특성을 가진 반도체 공정 가스의 화학식은 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['SiH4','SiH₄','실란','silane','Silane']],
+    explanation:'실란(SiH₄): 자연발화성. 누출 즉시 화재·폭발. 반도체 공정의 주요 화재 위험물.' },
+
+  { id:187, type:'fill', lecture:'13-14강', category:'반도체 안전',
+    question:'불산(HF) 피부 노출 시 응급처치로 도포하는 약품은 [①] 겔이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['글루콘산칼슘','Calcium Gluconate','calcium gluconate','글루콘산 칼슘']],
+    explanation:'글루콘산칼슘 겔: F⁻ 이온 중화. 즉시 물 세척 후 도포. 저칼슘혈증 예방.' },
+
+  { id:188, type:'fill', lecture:'13-14강', category:'SEMI',
+    question:'SEMI S10 위험성 공식: Risk = Severity × [①]',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['Likelihood','likelihood','가능성','발생가능성']],
+    explanation:'SEMI S10: Risk = Severity(심각도) × Likelihood(발생 가능성). 결과를 매트릭스에 표시.' },
+
+  { id:189, type:'fill', lecture:'11-12강', category:'제도·법규',
+    question:'EU의 화학물질 등록(Registration)·평가(Evaluation)·허가(Authorization)를 규정하는 규정의 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['REACH','reach']],
+    explanation:'REACH: Registration, Evaluation, Authorisation and Restriction of Chemicals. EU 화학물질 관리 핵심 규정.' },
+
+  { id:190, type:'fill', lecture:'11-12강', category:'탄소중립',
+    question:'UN이 2015년 채택한 지속가능발전목표의 영문 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['SDGs','SDG','sdgs']],
+    explanation:'SDGs: Sustainable Development Goals. 17개 목표·169개 세부목표. 2030 Agenda. ESG와 연계.' },
+
+  { id:191, type:'fill', lecture:'12-13강', category:'반도체 기초',
+    question:'반도체 클린룸에서 공기를 위에서 아래로 균일하게 흐르게 하는 방식을 [①] 층류 방식이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['수직','Vertical','vertical']],
+    explanation:'수직 층류(Vertical Laminar Flow): 파티클이 위에서 아래로 쓸려 내려가도록 설계.' },
+
+  { id:192, type:'fill', lecture:'13-14강', category:'반도체 안전',
+    question:'반도체 공장 고위험 정비 작업 전 발급받는 "작업 안전 허가서"를 영문 약자로 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['PTW','Permit to Work','permit to work']],
+    explanation:'PTW(Permit To Work): 작업 전 안전성 확인 후 발급. LOTO·퍼지 완료 확인 포함.' },
+
+  { id:193, type:'fill', lecture:'10강', category:'독성 개념',
+    question:'독성학에서 독성 영향이 처음 관찰되는 최저 용량을 [①](이)라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['LOAEL','로아엘']],
+    explanation:'LOAEL(Lowest Observed Adverse Effect Level). NOAEL은 독성이 관찰되지 않는 최고 용량.' },
+
+  { id:194, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 클린룸에서 0.3μm 입자를 99.97% 이상 걸러내는 고효율 공기 필터를 [①] 필터라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['HEPA','hepa']],
+    explanation:'HEPA(High Efficiency Particulate Air): 클린룸 핵심 공기 정화 장치. 더 고효율 버전은 ULPA.' },
+
+  { id:195, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 포토리소그래피에서 노광 후 PR을 선택적으로 녹여내어 회로 패턴을 형성하는 공정을 [①](이)라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['현상','현상(Development)','Development','development']],
+    explanation:'현상(Development): TMAH 등 현상액으로 노광된 PR을 제거하여 회로 패턴 형성.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 주관식 (5문제, 196~200)
+  ══════════════════════════════════════════════════ */
+
+  { id:196, type:'short', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)이 인체에 미치는 건강 영향을 혈액계·신경계·신장·뼈 장기계별로 서술하시오.',
+    modelAnswer:'[혈액계] ALAD 억제 → 헴 합성 장애 → 빈혈. ZPP 증가.\n[신경계] ①중추신경: 어린이 IQ 저하, 학습 장애 ②말초신경: 수지·발지 근력 저하(납 마비)\n[신장] 세뇨관 손상 → 만성 신부전\n[뼈] 칼슘 대신 뼈에 축적(전체 납의 약 95%). 장기 저장 창고이자 후에 재방출 원인',
+    explanation:'납 독성 핵심: 혈액(ALAD 억제·빈혈) + 신경(어린이 특히 취약) + 뼈(장기 저장).' },
+
+  { id:197, type:'short', lecture:'13-14강', category:'반도체 안전',
+    question:'불산(HF)의 독성 기전과 응급처치 방법을 단계별로 서술하시오.',
+    modelAnswer:'[독성 기전] ①HF가 약산이어서 피부 통과 용이 ②통증 지연 → 인지 늦음 ③체내 F⁻ + Ca²⁺ → CaF₂(불용성) ④혈중 Ca²⁺ 급감(저칼슘혈증) ⑤심장 부정맥·심장마비\n[응급처치] ①즉시 대량 흐르는 물로 15~20분 세척 ②글루콘산 칼슘(Calcium Gluconate) 겔 도포 ③즉시 의료기관 이송 ④병원에서 정맥 글루콘산칼슘 투여(저칼슘혈증 교정)',
+    explanation:'핵심: 통증 지연(약산) → 저칼슘혈증 → 심장마비. 글루콘산칼슘이 핵심 처치.' },
+
+  { id:198, type:'short', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 이온주입(Ion Implantation) 공정의 주요 유해인자를 3가지 이상 서술하시오.',
+    modelAnswer:'①독성 가스 노출: AsH₃(아르신), PH₃(포스핀), BF₃ 등 극독성 도판트 가스 → 누출 시 용혈·폐독성\n②X선(제동복사): 200~400kV 고전압 이온 가속 시 X선 발생. 이온박스 내부 정비 시 피폭 위험\n③고전압 감전 위험: 200~400kV 전압\n④잔류 비소(As) 오염: 이온박스 내부 정비 시 비소 분말 접촉 노출\n⑤소음: 진공펌프, 냉각설비 소음',
+    explanation:'이온주입 3대 유해인자: 독성가스 + X선 + 고전압.' },
+
+  { id:199, type:'short', lecture:'10강', category:'독성동태',
+    question:'생체변환(Biotransformation) 1상과 2상 반응을 구분하여 설명하고, 대사활성화(Bioactivation)의 예를 드시오.',
+    modelAnswer:'[1상 반응] CYP450 효소에 의한 산화·환원·가수분해. 극성기 도입 → 수용성 약간 증가. 반드시 해독이 아님\n[2상 반응] 포합(Conjugation) 반응: 글루쿠론산·황산·글리신·글루타치온 등과 결합 → 수용성 대폭↑ → 신장·담즙 배설 촉진\n[대사활성화(Bioactivation) 예] ①벤젠→벤젠에폭사이드(CYP2E1)→골수독성·AML ②메탄올→포름알데히드(ADH)→시신경 손상 ③파라세타몰 과량→NAPQI→간독성',
+    explanation:'1상=극성 도입, 2상=포합·배설. Bioactivation은 독성이 강화되는 1상 반응.' },
+
+  { id:200, type:'short', lecture:'11-12강', category:'경영시스템',
+    question:'RE100, 탄소중립, ESG의 각 개념을 정의하고 세 개념의 연관성을 서술하시오.',
+    modelAnswer:'[RE100] 기업이 사용하는 전력 100%를 재생에너지로 충당하겠다는 자발적 이니셔티브. 2014년 CDP·The Climate Group 주도\n[탄소중립] 온실가스 순 배출량 제로. 배출량 = 흡수량+제거량. 한국 2050 넷제로 목표\n[ESG] 환경(E)·사회(S)·지배구조(G)로 기업을 평가하는 투자·공시 기준\n[연관성] RE100 달성→탄소중립 기여→ESG의 E 점수 향상→투자 유치·평판 개선. 에너지 다소비 반도체 기업에서 RE100이 ESG 평가에 직접 반영됨',
+    explanation:'RE100→탄소중립→ESG(E) 향상의 연쇄 관계.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 설명 맞추기 (10문제, 201~210)
+  ══════════════════════════════════════════════════ */
+
+  { id:201, type:'match', lecture:'9강', category:'중금속 기초',
+    question:'다음 설명이 가리키는 것은?\n\n"납(Pb) 노출 시 ALAD가 억제되어 아연 대신 납이 포르피린 고리에 결합해 형성되는 비정상 화합물. 납 건강 영향의 혈액 바이오마커로 활용"',
+    options:['t,t-뮤콘산','β₂-마이크로글로불린','ZPP(아연프로토포르피린)','코티닌'],
+    answer:2, explanation:'ZPP(Zinc Protoporphyrin): 납에 의한 헴 합성 장애의 영향 바이오마커. 혈중 농도 증가 = 납 건강 영향.' },
+
+  { id:202, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"공기 중에서 자연발화(Pyrophoric)하는 반도체 공정 가스. 화학식 SiH₄. CVD 공정에서 실리콘막 형성에 사용. 누출 즉시 화재 발생"',
+    options:['포스핀(PH₃)','아르신(AsH₃)','실란(Silane, SiH₄)','암모니아(NH₃)'],
+    answer:2, explanation:'실란(SiH₄): 자연발화성. CVD 공정에서 실리콘막 형성. 화재·폭발이 주요 위험.' },
+
+  { id:203, type:'match', lecture:'11-12강', category:'제도·법규',
+    question:'다음 설명이 가리키는 것은?\n\n"EU가 2006년 제정한 화학물질 관리 규정. 화학물질 제조·수입 업체는 해당 물질의 안전 정보를 등록해야 하며, 유해물질은 별도 허가를 받아야 함"',
+    options:['GHS(국제조화시스템)','REACH(화학물질 등록·평가·허가 규정)','SDS(물질안전보건자료)','SDGs(지속가능발전목표)'],
+    answer:1, explanation:'REACH: Registration, Evaluation, Authorisation of Chemicals. 2만 종 이상의 화학물질 관리.' },
+
+  { id:204, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"반도체 클린룸 공기 정화에 사용하는 필터. 0.3μm 입자를 99.97% 이상 포집. 이보다 효율 높은 ULPA가 있음"',
+    options:['HEPA 필터','활성탄 필터','프리 필터(Pre-filter)','스크러버(Scrubber)'],
+    answer:0, explanation:'HEPA(High Efficiency Particulate Air): 클린룸 핵심 공기 정화 장치.' },
+
+  { id:205, type:'match', lecture:'13-14강', category:'반도체 안전',
+    question:'다음 설명이 가리키는 것은?\n\n"고위험 작업 전 해당 작업의 안전성을 다각도로 확인하고 허가권자의 서명을 받는 문서. LOTO·퍼지 완료, PPE 착용, 2인 1조 여부 확인"',
+    options:['FOUP 체크리스트','PTW(작업 안전 허가서)','SDS(물질안전보건자료)','SEMI S10 체크리스트'],
+    answer:1, explanation:'PTW(Permit To Work): 위험 작업의 사전 안전 확인 문서. LOTO+퍼지+측정+PPE 확인이 핵심.' },
+
+  { id:206, type:'match', lecture:'11-12강', category:'탄소중립',
+    question:'다음 설명이 가리키는 것은?\n\n"2015년 UN이 채택. 2030년까지 달성해야 할 17개 목표·169개 세부 목표. 빈곤 종식부터 기후행동, 육상 생태계까지 포함"',
+    options:['파리협정(Paris Agreement)','SDGs(지속가능발전목표)','RE100','탄소국경조정제도(CBAM)'],
+    answer:1, explanation:'SDGs: Sustainable Development Goals. 17 Goals, 169 Targets. ESG 평가와 연계.' },
+
+  { id:207, type:'match', lecture:'10강', category:'독성동태',
+    question:'다음 설명이 가리키는 것은?\n\n"간에 주로 분포하는 효소군. 산화·환원·가수분해 반응을 촉매하는 생체변환 1상 효소. 이소효소(isoenzyme) 다형성이 개인 감수성 차이의 주요 원인"',
+    options:['ALAD(아미노레불린산탈수효소)','Metallothionein','CYP450(시토크롬 P450)','AChE(콜린에스테라제)'],
+    answer:2, explanation:'CYP450: 생체변환 1상 핵심 효소. CYP1A1, CYP2E1 등 이소효소 다형성 → 개인 감수성 차이.' },
+
+  { id:208, type:'match', lecture:'10강', category:'독성동태',
+    question:'다음 설명이 가리키는 것은?\n\n"생체변환 2상 반응 중 가장 대표적인 포합 반응. UGT 효소가 촉매. 수용성을 대폭 높여 담즙·신장 배설을 촉진"',
+    options:['산화적 인산화','글루쿠론산 포합(Glucuronidation)','황산 포합(Sulfation)','자연발화'],
+    answer:1, explanation:'글루쿠론산 포합: 2상 반응 중 가장 많은 물질에 적용. 글루쿠론산+독성물질 → 극성↑ → 배설.' },
+
+  { id:209, type:'match', lecture:'12-13강', category:'반도체 기초',
+    question:'다음 설명이 가리키는 것은?\n\n"반도체 클린룸 내 웨이퍼 박스(FOUP)를 자동으로 운반하는 통합 물류 시스템. 천장 레일을 이용한 OHT(Overhead Hoist Transport)를 포함"',
+    options:['FOUP(밀폐운반용기)','AMHS(자동물류시스템)','CMP(화학기계연마)','SEMI S2'],
+    answer:1, explanation:'AMHS(Automated Material Handling System): 클린룸 자동 물류. 작업자 출입 최소화·생산성 향상.' },
+
+  { id:210, type:'match', lecture:'11-12강', category:'탄소중립',
+    question:'다음 설명이 가리키는 것은?\n\n"온실가스 배출 범위 분류에서, 자사 공장·건물에서 연료 연소로 직접 배출되는 온실가스"',
+    options:['Scope 1(직접 배출)','Scope 2(간접 배출 – 구매 전력)','Scope 3(가치사슬 간접 배출)','탄소 크레딧'],
+    answer:0, explanation:'Scope 1: 자사 직접 배출. Scope 2: 구매 전력 간접. Scope 3: 공급망·소비·폐기 등 가치사슬 전체.' },
+
 ];
 
 /* ══════════════════════════════════════════════════
