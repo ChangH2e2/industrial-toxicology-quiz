@@ -16,8 +16,7 @@ const TYPE_LABELS = {
   multiple: '4지선다',
   fill: '빈칸',
   short: '주관식',
-  match: '설명맞추기',
-  order: '순서맞추기',
+  match: '단답형',
 }
 
 export default function ResultScreen({ results, onRestart, onRestartSame }) {
@@ -87,8 +86,6 @@ export default function ResultScreen({ results, onRestart, onRestartSame }) {
                         ? item.q.options[item.q.answer]
                         : item.q.type === 'match'
                         ? item.q.answer
-                        : item.q.type === 'order'
-                        ? item.q.answer.map(i => item.q.items[i]).join(' → ')
                         : item.q.modelAnswer}
                     </span>
                   </div>

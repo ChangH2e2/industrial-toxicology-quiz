@@ -8,7 +8,6 @@ const COLOR = {
   violet:  { bg: 'bg-violet-100',  border: 'border-violet-400',  text: 'text-violet-700',  ring: 'ring-violet-400',  sel: 'bg-violet-500 text-white border-violet-500' },
   orange:  { bg: 'bg-orange-100',  border: 'border-orange-400',  text: 'text-orange-700',  ring: 'ring-orange-400',  sel: 'bg-orange-500 text-white border-orange-500' },
   rose:    { bg: 'bg-rose-100',    border: 'border-rose-400',    text: 'text-rose-700',    ring: 'ring-rose-400',    sel: 'bg-rose-500 text-white border-rose-500' },
-  teal:    { bg: 'bg-teal-100',    border: 'border-teal-400',    text: 'text-teal-700',    ring: 'ring-teal-400',    sel: 'bg-teal-500 text-white border-teal-500' },
 }
 
 export default function StartScreen({ onStart }) {
@@ -138,8 +137,7 @@ export default function StartScreen({ onStart }) {
           <div>📝 4지선다 — 보기 선택</div>
           <div>✏️ 빈칸 — 단어 입력</div>
           <div>💭 주관식 — 자유 서술</div>
-          <div>🔗 맞추기 — 설명→용어</div>
-          <div className="col-span-2">🔢 순서 — 단계 순서 배열</div>
+          <div>🔗 단답형 — 직접 입력</div>
         </div>
       </div>
     </div>

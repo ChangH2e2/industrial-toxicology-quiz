@@ -34,14 +34,14 @@ export default function MatchQuestion({ q, answered, onAnswer }) {
   return (
     <div className="space-y-4">
       <div className="space-y-1">
-        <label className="text-xs font-semibold text-rose-500">🔍 설명이 가리키는 용어를 직접 입력하세요</label>
+        <label className="text-xs font-semibold text-rose-500">✍️ 답을 직접 입력하세요 (순서형은 → 또는 쉼표로 구분)</label>
         <input
           type="text"
           value={value}
           onChange={e => setValue(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && !answered && handleSubmit()}
           disabled={answered}
-          placeholder="용어·약자·영문 모두 가능..."
+          placeholder="용어·순서·약자·영문 모두 가능..."
           className={`w-full px-4 py-3 rounded-xl border-2 text-gray-800 font-medium text-sm outline-none transition-all disabled:cursor-not-allowed ${borderCls}`}
         />
       </div>
