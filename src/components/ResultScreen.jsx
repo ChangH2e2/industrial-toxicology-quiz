@@ -20,7 +20,7 @@ const TYPE_LABELS = {
   match: '설명맞추기',
 }
 
-export default function ResultScreen({ results, onRestart }) {
+export default function ResultScreen({ results, onRestart, onRestartSame }) {
   const { score, total, log } = results
   const countable = log.filter(l => l.correct !== null)
   const countableCorrect = countable.filter(l => l.correct).length
@@ -101,10 +101,18 @@ export default function ResultScreen({ results, onRestart }) {
         <div className="flex gap-3 pb-8">
           <button
             onClick={onRestart}
-            className="flex-1 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-2xl font-bold text-base shadow hover:from-indigo-700 hover:to-violet-700 active:scale-95 transition-all"
+            className="flex-1 py-4 bg-white border-2 border-indigo-300 text-indigo-600 rounded-2xl font-bold text-base shadow hover:bg-indigo-50 active:scale-95 transition-all"
           >
-            다시 풀기 🔄
+            메인으로 🏠
           </button>
+          {onRestartSame && (
+            <button
+              onClick={onRestartSame}
+              className="flex-1 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-2xl font-bold text-base shadow hover:from-indigo-700 hover:to-violet-700 active:scale-95 transition-all"
+            >
+              같은 조건 다시 🔄
+            </button>
+          )}
         </div>
       </div>
     </div>

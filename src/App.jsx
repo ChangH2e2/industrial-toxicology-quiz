@@ -11,12 +11,20 @@ export default function App() {
   const handleStart = (s) => { setSettings(s); setScreen('quiz') }
   const handleFinish = (r) => { setResults(r); setScreen('result') }
   const handleRestart = () => { setScreen('start'); setSettings(null); setResults(null) }
+  const handleGoHome = () => { setScreen('start'); setSettings(null); setResults(null) }
+  const handleRestartSame = () => {
+    if (!settings) return
+    const shuffled = [...settings.questions].sort(() => Math.random() - 0.5)
+    setSettings({ ...settings, questions: shuffled })
+    setResults(null)
+    setScreen('quiz')
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-indigo-50 to-violet-50">
       {screen === 'start'  && <StartScreen onStart={handleStart} />}
-      {screen === 'quiz'   && <QuizScreen settings={settings} onFinish={handleFinish} />}
-      {screen === 'result' && <ResultScreen results={results} settings={settings} onRestart={handleRestart} />}
+      {screen === 'quiz'   && <QuizScreen settings={settings} onFinish={handleFinish} onGoHome={handleGoHome} />}
+      {screen === 'result' && <ResultScreen results={results} settings={settings} onRestart={handleRestart} onRestartSame={handleRestartSame} />}
     </div>
   )
 }

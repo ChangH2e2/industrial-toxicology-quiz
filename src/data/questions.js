@@ -2590,6 +2590,151 @@ export const questions = [
     options:['산업안전보건법(산안법)','화학물질관리법(화관법)','산업재해보상보험법(산재법)','고압가스안전관리법'],
     answer:1, explanation:'화관법(화학물질관리법): 환경부 소관. 화학물질 취급 사업장 등록·관리·사고 대응. ↔ 산안법: 고용노동부, 작업장 안전보건.' },
 
+  /* ══════════════════════════════════════════════════
+     ★ OX → 빈칸/설명 변형 문제 (466~490)
+     기존 OX 내용을 더 어려운 유형으로 변환
+  ══════════════════════════════════════════════════ */
+
+  { id:466, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'크롬은 [①]가(價) 형태가 3가보다 독성이 훨씬 강하며, 폐암·비강암·비중격천공을 유발한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['6','6가','6가(Cr⁶⁺)','육가']],
+    explanation:'6가 크롬(Cr⁶⁺): 강력한 산화제. IARC 1군. 폐암·비강암·비중격천공. 3가(Cr³⁺)는 필수 미량원소.' },
+
+  { id:467, type:'fill', lecture:'9강', category:'신경독성',
+    question:'유기수은(메틸수은)이 무기수은보다 신경독성이 강한 이유는 [①]이 높아 혈뇌장벽을 통과하기 때문이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['지용성','지용성(지질친화성)','지질친화성','지질용해도']],
+    explanation:'유기수은(메틸수은): 지용성 → 혈뇌장벽 쉽게 통과 → 중추신경계 손상. 미나마타병 원인.' },
+
+  { id:468, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'방사선 투과력 순서: [①] > 베타(β)선 > 알파(α)선. 알파선은 종이 한 장으로도 차단 가능하다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['감마선','γ선','감마(γ)선','Gamma','gamma']],
+    explanation:'투과력: 감마선 > 베타선 > 알파선. 알파=종이·피부, 베타=알루미늄, 감마=납·콘크리트.' },
+
+  { id:469, type:'fill', lecture:'9강', category:'생체축적',
+    question:'생물학적 반감기가 [①]수록 체내에 오래 머물러 생체축적이 더 심해진다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['길','길수록']],
+    explanation:'반감기 길수록 = 배설 느림 = 축적↑. 카드뮴(신장 10~30년), 납(뼈 10~30년)이 대표적.' },
+
+  { id:470, type:'fill', lecture:'9강', category:'필수금속 치환',
+    question:'중금속 이온 노출 시 세포에서 합성되어 카드뮴·아연·구리·수은과 결합하는 해독 단백질은 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['Metallothionein','메탈로치오닌','metallothionein','MT']],
+    explanation:'Metallothionein(MT): 시스테인 풍부 단백질. 중금속 결합·해독 핵심. 카드뮴 노출 시 간·신장에서 대량 합성.' },
+
+  { id:471, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'알파(α)선은 외부 피폭보다 [①] 피폭(흡입·섭취) 시 생물학적 위해가 훨씬 더 크다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['내부','내부(Internal)','내부피폭']],
+    explanation:'알파선: 투과력 약(종이로 차단) → 외부 피폭 위험 낮음. 흡입·섭취로 내부 피폭 시 주변 조직에 고에너지 집중 → 매우 위험.' },
+
+  { id:472, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'현재 상용 원자력 발전소는 U-235의 핵[①]을 이용하며, 핵융합은 아직 연구 단계이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['분열','핵분열','fission']],
+    explanation:'상용 원전: 핵분열(Fission). 핵융합(Fusion)은 ITER 프로젝트 등 연구 단계. 둘을 혼동하지 말 것.' },
+
+  { id:473, type:'fill', lecture:'9강', category:'신경독성',
+    question:'납(Pb) 노출 시 아연 대신 납이 포르피린 고리에 결합해 형성되는 비정상 화합물의 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['ZPP','아연프로토포르피린']],
+    explanation:'ZPP(Zinc Protoporphyrin): 납에 의한 헴 합성 장애의 혈액 영향 바이오마커. 혈중 ZPP↑ = 납 건강 영향.' },
+
+  { id:474, type:'fill', lecture:'10강', category:'독성동태',
+    question:'독성 영향이 관찰되지 않는 최고 용량은 [①], 독성이 처음 관찰되는 최저 용량은 [②]이다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['NOAEL','노아엘'],['LOAEL','로아엘']],
+    explanation:'NOAEL(No Observed Adverse Effect Level) vs LOAEL(Lowest Observed Adverse Effect Level). NOAEL < LOAEL.' },
+
+  { id:475, type:'fill', lecture:'10강', category:'독성동태',
+    question:'피부(경피) 흡수가 잘 되는 물질의 특성은 [①]이 높다는 것이다. 불산(HF), TMAH, 유기용제가 대표적이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['지용성','지용성(지질친화성)','지질용해도']],
+    explanation:'지용성↑ → 피부 지질이중막 통과 쉬움. HF·TMAH·유기용제가 경피 흡수 위험. 불산은 약산이어서 피부 침투성 강함.' },
+
+  { id:476, type:'fill', lecture:'13-14강', category:'SEMI',
+    question:'SEMI S8은 반도체 장비의 [①] 가이드라인이고, SEMI S10은 [②] 가이드라인이다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['인간공학','Ergonomics','에르고노믹스'],['위험성평가','Risk Assessment','위험성 평가']],
+    explanation:'SEMI S8: Ergonomics(인간공학). SEMI S10: Risk Assessment(위험성평가). 혼동 주의. S2=EHS, S14=화재.' },
+
+  { id:477, type:'fill', lecture:'11-12강', category:'제도·법규',
+    question:'ACGIH TLV는 자발적 권고 기준이고, OSHA [①]은 미국의 법적 강제 허용노출기준이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['PEL','Permissible Exposure Limit']],
+    explanation:'OSHA PEL(법적 강제) vs ACGIH TLV(자발적 권고). 실제로 TLV가 더 자주 업데이트되어 더 엄격한 경우 많음.' },
+
+  { id:478, type:'fill', lecture:'10강', category:'독성동태',
+    question:'생체변환 1상 반응의 주요 효소 CYP450은 주로 [①]에 분포한다(폐가 아님).',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['간','liver','Liver','간(liver)']],
+    explanation:'CYP450: 주로 간에 분포. 소장·폐·신장에도 일부 존재. 폐에 주로 분포한다는 것은 틀린 내용.' },
+
+  { id:479, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'포스핀(PH₃)은 인(P) 공급원으로 [①]형(type) 도핑에 사용된다(P형이 아님).',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['N','n','N형','n형','N-type']],
+    explanation:'포스핀(PH₃): N형 도핑(전자 공여). P형에는 붕소계(BF₃, B₂H₆). 자주 혼동되므로 주의.' },
+
+  { id:480, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 클린룸 ISO 등급에서 숫자가 [①]수록 더 청정한 환경이다(ISO Class 1이 가장 청정).',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['낮','낮을','낮을수록']],
+    explanation:'ISO 14644 클린룸 등급: 숫자 낮을수록 청정. Class 1(최고청정) ~ Class 9. 반도체 전공정은 Class 1~3.' },
+
+  { id:481, type:'match', lecture:'9강', category:'중금속 기초',
+    question:'다음 설명이 가리키는 것은?\n\n"중금속 이온 노출 시 세포에서 합성되는 해독 단백질. 시스테인 잔기에 중금속 결합. 카드뮴·아연·구리·수은과 높은 친화력. 신장 피질에 카드뮴 장기 저장의 핵심"',
+    options:['킬레이트제(Chelating Agent)','Metallothionein(메탈로치오닌)','글루타치온(GSH)','항산화효소(SOD)'],
+    answer:1, explanation:'Metallothionein(MT): 간·신장에서 합성. 카드뮴-MT 복합체로 신장에 장기 저장 → T½ 10~30년.' },
+
+  { id:482, type:'match', lecture:'9강', category:'발암성',
+    question:'다음 설명이 가리키는 것은?\n\n"항공우주·전자 부품 소재. IARC 1군 발암물질. 흡입 시 면역매개 만성 폐육아종증(CBD) 발생. 희귀하지만 고위험"',
+    options:['니켈(Ni)','베릴륨(Be)','6가 크롬(Cr⁶⁺)','비소(As)'],
+    answer:1, explanation:'베릴륨(Be): 항공·전자·원자력 소재. 흡입 → 면역매개 폐육아종증(CBD: Chronic Beryllium Disease). IARC 1군.' },
+
+  { id:483, type:'match', lecture:'9강', category:'발암성',
+    question:'다음 설명이 가리키는 것은?\n\n"IARC 1군 발암물질. 도금·용접 공정 주요 노출. 접촉 시 금속 알레르기(피부염) 가장 흔하고, 흡입 시 폐암·비강암 유발"',
+    options:['납(Pb)','카드뮴(Cd)','니켈(Ni)','망간(Mn)'],
+    answer:2, explanation:'니켈(Ni): IARC 1군. 금속 알레르기 가장 흔한 원인. 스테인리스·도금·합금·반도체 배선에 사용.' },
+
+  { id:484, type:'match', lecture:'9강', category:'방사성 원소',
+    question:'다음 설명이 가리키는 것은?\n\n"세 종류 방사선 중 투과력 가장 약해 종이 한 장으로 차단 가능하나, 흡입·섭취로 내부 피폭 시 주변 조직에 에너지를 집중하여 매우 위험"',
+    options:['감마(γ)선','베타(β)선','알파(α)선','중성자선'],
+    answer:2, explanation:'알파선: 외부 피폭(↓위험) vs 내부 피폭(↑위험). 라돈(Rn) 흡입이 대표적 내부 피폭 사례. 폐암 유발.' },
+
+  { id:485, type:'match', lecture:'13-14강', category:'SEMI',
+    question:'다음 설명이 가리키는 것은?\n\n"반도체 장비 설계에서 작업 자세·반복 동작·힘·진동·조명 등을 인체공학적으로 최적화하는 기준을 제공하는 SEMI 가이드라인 (S10·S2와 구분)"',
+    options:['SEMI S2','SEMI S6','SEMI S8','SEMI S14'],
+    answer:2, explanation:'SEMI S8: Ergonomics(인간공학). S2=EHS, S6=유해가스 모니터링, S10=위험성평가, S14=화재위험성평가.' },
+
+  { id:486, type:'match', lecture:'11-12강', category:'제도·법규',
+    question:'다음 설명이 가리키는 것은?\n\n"ACGIH가 제정. 법적 강제력 없는 자발적 권고 기준. 8시간 TWA. 과학적 근거로 자주 갱신되어 OSHA PEL보다 실제로 엄격한 경우 많음"',
+    options:['OSHA PEL(허용노출기준)','ACGIH TLV(권고 노출기준)','BEI(생물학적 노출지수)','NIOSH REL'],
+    answer:1, explanation:'ACGIH TLV(Threshold Limit Value): 자발적 권고. OSHA PEL은 법적 강제. TLV가 과학적으로 더 자주 업데이트.' },
+
+  { id:487, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"포스핀(PH₃)을 인(P) 공급원으로 사용하며, 주어진 불순물이 전자를 공여하여 전류를 운반하는 반도체 도핑 유형"',
+    options:['P형(정공 도핑)','N형(전자 도핑)','양성형(ambipolar)','절연형(intrinsic)'],
+    answer:1, explanation:'N형 도핑: 인(P)·비소(As)·안티몬(Sb) 등 5족 원소 → 전자 공여. P형: 붕소(B) 등 3족 원소 → 정공(hole) 생성.' },
+
+  { id:488, type:'match', lecture:'9강', category:'중금속 기초',
+    question:'다음 설명이 가리키는 것은?\n\n"독성 금속 이온이 형태 유사성으로 필수 금속 이온 자리를 빼앗는 기전. 납→칼슘, 카드뮴→아연, 수은→-SH기 결합이 대표 예"',
+    options:['산화적 스트레스','항산화 방어 파괴','필수금속 치환(Essential Metal Displacement)','SH기 결합'],
+    answer:2, explanation:'필수금속 치환: 형태 유사성이 독성 기전 핵심. Pb↔Ca²⁺, Cd↔Zn²⁺ → 정상 기능 방해.' },
+
+  { id:489, type:'match', lecture:'11-12강', category:'연관·인과',
+    question:'다음 설명이 가리키는 것은?\n\n"Hill의 9가지 인과관계 기준 중 유일한 필수 조건. 원인(노출)이 결과(질병)보다 반드시 시간적으로 선행해야 한다"',
+    options:['연관의 강도(Strength)','일관성(Consistency)','시간성(Temporality)','생물학적 개연성(Plausibility)'],
+    answer:2, explanation:'Temporality(시간성): Hill 9기준 중 유일 필수. 노출→질병 순서가 없으면 인과 성립 불가. 나머지 8개는 지지 기준.' },
+
+  { id:490, type:'match', lecture:'10강', category:'독성동태',
+    question:'다음 설명이 가리키는 것은?\n\n"독성 영향이 관찰되지 않는 최고 용량. 이 값을 근거로 안전계수를 적용하여 독성참고치(RfD) 또는 일일허용섭취량(ADI) 산출"',
+    options:['LOAEL(최저관찰독성량)','LD50(반수치사량)','NOAEL(무관찰독성량)','BEI(생물학적노출지수)'],
+    answer:2, explanation:'NOAEL(No Observed Adverse Effect Level): 독성 없는 최고 용량. NOAEL ÷ 안전계수(100~1000) = RfD/ADI 기준.' },
+
 ];
 
 /* ══════════════════════════════════════════════════

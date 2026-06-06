@@ -21,7 +21,7 @@ const BADGE_COLOR = {
   rose:    'bg-rose-100 text-rose-700',
 }
 
-export default function QuizScreen({ settings, onFinish }) {
+export default function QuizScreen({ settings, onFinish, onGoHome }) {
   const { questions } = settings
   const [idx, setIdx] = useState(0)
   const [answered, setAnswered] = useState(false)
@@ -55,12 +55,31 @@ export default function QuizScreen({ settings, onFinish }) {
     }
   }
 
+  const handleGoHomeConfirm = () => {
+    if (log.length === 0 || window.confirm('퀴즈를 종료하고 메인으로 돌아갈까요? 현재까지의 풀이가 사라집니다.')) {
+      onGoHome()
+    }
+  }
+
+  const handleEarlyFinish = () => {
+    const currentScore = log.filter(l => l.correct).length
+    onFinish({ score: currentScore, total: log.length, log: [...log] })
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-start p-4 pt-6">
       {/* 상단 바 */}
       <div className="w-full max-w-2xl mb-4">
         <div className="flex justify-between items-center mb-2 text-sm text-gray-500">
-          <span className="font-semibold text-indigo-700">{idx + 1} / {questions.length}</span>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleGoHomeConfirm}
+              className="px-3 py-1 rounded-xl text-xs font-semibold bg-gray-100 text-gray-500 hover:bg-gray-200 active:scale-95 transition-all"
+            >
+              🏠 메인
+            </button>
+            <span className="font-semibold text-indigo-700">{idx + 1} / {questions.length}</span>
+          </div>
           <span className="font-bold text-indigo-600">정답 {score}개</span>
         </div>
         <div className="w-full h-2 bg-indigo-100 rounded-full overflow-hidden">
@@ -126,13 +145,21 @@ export default function QuizScreen({ settings, onFinish }) {
 
           {/* 다음 버튼 */}
           {answered && (
-            <div className="px-6 pb-6">
+            <div className="px-6 pb-6 flex flex-col gap-2">
               <button
                 onClick={handleNext}
                 className="w-full py-3 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-2xl font-bold hover:from-indigo-700 hover:to-violet-700 active:scale-95 transition-all shadow"
               >
                 {idx + 1 >= questions.length ? '결과 보기 🏁' : '다음 문제 →'}
               </button>
+              {log.length > 0 && idx + 1 < questions.length && (
+                <button
+                  onClick={handleEarlyFinish}
+                  className="w-full py-2 border border-indigo-300 text-indigo-600 rounded-2xl font-semibold text-sm hover:bg-indigo-50 active:scale-95 transition-all"
+                >
+                  여기까지만 결과 보기 🏁
+                </button>
+              )}
             </div>
           )}
         </div>
