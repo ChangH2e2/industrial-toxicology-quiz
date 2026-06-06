@@ -1144,6 +1144,396 @@ export const questions = [
     options:['Scope 1(직접 배출)','Scope 2(간접 배출 – 구매 전력)','Scope 3(가치사슬 간접 배출)','탄소 크레딧'],
     answer:0, explanation:'Scope 1: 자사 직접 배출. Scope 2: 구매 전력 간접. Scope 3: 공급망·소비·폐기 등 가치사슬 전체.' },
 
+  /* ══════════════════════════════════════════════════
+     ★ 추가 OX (211~230)
+  ══════════════════════════════════════════════════ */
+
+  { id:211, type:'ox', lecture:'9강', category:'발암성',
+    question:'IARC 1군 발암물질은 인간에 대한 발암성이 충분히 확인된 물질이다.',
+    answer:true, explanation:'IARC 1군: Carcinogenic to humans. 6가 크롬·비소·벤젠·석면 등이 해당.' },
+
+  { id:212, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)의 생물학적 반감기는 혈중(약 28~36일)보다 뼈에서(수십 년)가 훨씬 길다.',
+    answer:true, explanation:'혈중 납 T½ ≈ 28~36일. 뼈 납 T½ ≈ 10~30년. 뼈에 축적된 납은 오랫동안 재방출.' },
+
+  { id:213, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd)의 신장 내 생물학적 반감기는 10~30년으로 매우 길다.',
+    answer:true, explanation:'카드뮴-Metallothionein 복합체로 신장에 장기 저장. 반감기 10~30년이 가장 대표적 특성.' },
+
+  { id:214, type:'ox', lecture:'10강', category:'노출평가',
+    question:'TLV-TWA는 하루 8시간, 주 40시간 반복 노출 시 건강에 해롭지 않은 시간가중평균 농도이다.',
+    answer:true, explanation:'TWA(Time-Weighted Average): 8시간 평균 기준. ACGIH TLV-TWA가 대표적.' },
+
+  { id:215, type:'ox', lecture:'10강', category:'독성동태',
+    question:'독성동태(Toxicokinetics) ADME의 순서는 흡수(A) → 분포(D) → 대사(M) → 배설(E)이다.',
+    answer:true, explanation:'ADME = Absorption → Distribution → Metabolism → Excretion. 독성학 기본 개념.' },
+
+  { id:216, type:'ox', lecture:'10강', category:'독성동태',
+    question:'생체변환 1상 반응의 CYP450 효소는 주로 폐(lung)에 분포한다.',
+    answer:false, explanation:'CYP450은 주로 간(liver)에 분포. 소장·폐·신장에도 일부 존재.' },
+
+  { id:217, type:'ox', lecture:'11-12강', category:'연관·인과',
+    question:'코호트(Cohort) 연구는 노출군·비노출군을 현재에서 미래로 추적하는 전향적 연구이다.',
+    answer:true, explanation:'전향적 코호트: 현재 노출 확인 → 미래 질병 발생 추적. 시간·비용 많이 소요.' },
+
+  { id:218, type:'ox', lecture:'11-12강', category:'연관·인과',
+    question:'환자-대조군(Case-Control) 연구는 전향적(Prospective) 연구이다.',
+    answer:false, explanation:'환자-대조군은 후향적(Retrospective) 연구. 질병군과 대조군에서 과거 노출 비교.' },
+
+  { id:219, type:'ox', lecture:'11-12강', category:'제도·법규',
+    question:'GHS(Globally Harmonized System)는 화학물질의 분류 기준과 경고표지·SDS 형식을 국제적으로 통일하는 시스템이다.',
+    answer:true, explanation:'GHS: UN 주관. 화학물질 분류·표지·SDS 국제 표준화.' },
+
+  { id:220, type:'ox', lecture:'11-12강', category:'제도·법규',
+    question:'GHS 기반 SDS(물질안전보건자료)는 총 16가지 항목으로 구성된다.',
+    answer:true, explanation:'SDS 16항목: 화학물질 정보·유해성·구성성분·응급처치·소화·누출·취급·저장·노출기준 등.' },
+
+  { id:221, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 포토리소그래피의 세부 단계는 "PR 도포 → 노광 → 현상" 순이다.',
+    answer:true, explanation:'PR 도포(Coat) → 소프트 베이크 → 노광(UV Exposure) → 현상(TMAH) → 하드 베이크.' },
+
+  { id:222, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 에피택시(Epitaxy) 공정은 웨이퍼 위에 추가 실리콘 결정층을 성장시키는 공정이다.',
+    answer:true, explanation:'에피택시: 기판 결정 구조와 동일한 방향으로 원자 배열 성장. 소자 특성 향상.' },
+
+  { id:223, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 CMP 공정은 화학적·기계적 방법으로 웨이퍼 표면을 평탄화하는 공정이다.',
+    answer:true, explanation:'CMP(Chemical Mechanical Planarization): 슬러리+연마 패드. 나노 수준 평탄화.' },
+
+  { id:224, type:'ox', lecture:'13-14강', category:'반도체 안전',
+    question:'이소프로필알코올(IPA)은 반도체 웨이퍼·장비 세정에 사용되며, 가연성·폭발성이 있다.',
+    answer:true, explanation:'IPA(C₃H₈O): 폭발하한(LEL) 2%, 인화점 12°C. 정전기·화기 관리 필수.' },
+
+  { id:225, type:'ox', lecture:'9강', category:'아르신',
+    question:'아르신(AsH₃)의 용혈 메커니즘은 글루타치온(GSH) 고갈 → 산화 손상 → 적혈구 파괴이다.',
+    answer:true, explanation:'아르신 → GSH 고갈 → ROS 축적 → 적혈구 막 산화 손상 → 용혈 → 황달·빈혈·신부전.' },
+
+  { id:226, type:'ox', lecture:'9강', category:'중금속 기초',
+    question:'납 킬레이트 치료제로 Ca-EDTA(정주)와 DMSA/Succimer(경구)가 사용된다.',
+    answer:true, explanation:'킬레이트제 + 중금속 → 수용성 복합체 → 신장 배설. 납에는 Ca-EDTA, DMSA 사용.' },
+
+  { id:227, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'아산화질소(N₂O)는 반도체 산화막·질화막 형성 공정에서 산화제로 사용된다.',
+    answer:true, explanation:'N₂O: 고온에서 분해되어 산소 공급 → SiO₂ 또는 Si₃N₄ 형성에 활용.' },
+
+  { id:228, type:'ox', lecture:'11-12강', category:'제도·법규',
+    question:'OSHA PEL은 미국 법정 허용 노출기준이고, ACGIH TLV는 산업위생 전문가의 자발적 권고 기준이다.',
+    answer:true, explanation:'OSHA PEL: 법적 강제력. ACGIH TLV: 자발적이지만 과학적으로 자주 업데이트. 실제로 더 엄격한 경우 많음.' },
+
+  { id:229, type:'ox', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 다이싱(Dicing)은 전공정(Fab) 완료 후 웨이퍼를 개별 칩으로 절단하는 후공정이다.',
+    answer:true, explanation:'다이싱: 다이아몬드 블레이드나 레이저 절단. 후공정(패키징) 첫 단계.' },
+
+  { id:230, type:'ox', lecture:'9강', category:'방사성 원소',
+    question:'베타(β)선 차폐에는 알루미늄판이나 플라스틱이 사용된다.',
+    answer:true, explanation:'알파선=종이. 베타선=알루미늄·플라스틱. 감마선=납·콘크리트. 중성자=물·파라핀.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 4지선다 (231~255) — 순서·ADME·역학 포함
+  ══════════════════════════════════════════════════ */
+
+  { id:231, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'포토리소그래피(Photolithography) 세부 단계의 올바른 순서는?',
+    options:['노광 → PR 도포 → 현상','현상 → 노광 → PR 도포','PR 도포 → 현상 → 노광','PR 도포 → 노광 → 현상'],
+    answer:3, explanation:'PR 도포(Coat) → 소프트 베이크 → 노광(UV) → 현상(TMAH) → 하드 베이크.' },
+
+  { id:232, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'독성동태(Toxicokinetics) ADME의 올바른 순서는?',
+    options:['대사(M) → 흡수(A) → 분포(D) → 배설(E)','흡수(A) → 분포(D) → 대사(M) → 배설(E)','흡수(A) → 대사(M) → 분포(D) → 배설(E)','분포(D) → 흡수(A) → 대사(M) → 배설(E)'],
+    answer:1, explanation:'ADME = Absorption(흡수) → Distribution(분포) → Metabolism(대사) → Excretion(배설).' },
+
+  { id:233, type:'multiple', lecture:'11-12강', category:'경영시스템',
+    question:'ISO 경영시스템 표준의 발전 순서로 올바른 것은?',
+    options:['ISO 9000 → ISO 45000 → ISO 14000','ISO 14000 → ISO 9000 → ISO 45000','ISO 9000 → ISO 14000 → ISO 45000','ISO 45000 → ISO 14000 → ISO 9000'],
+    answer:2, explanation:'ISO 9000(1987, 품질) → ISO 14000(1996, 환경) → ISO 45000(2018, 안전보건) 순으로 발전.' },
+
+  { id:234, type:'multiple', lecture:'11-12강', category:'연관·인과',
+    question:'전향적 코호트 연구(Prospective Cohort Study)의 특징으로 옳은 것은?',
+    options:['질병군·대조군에서 과거 노출을 후향적으로 비교','특정 시점에서 노출·질병을 동시에 단면 파악','현재 노출군·비노출군을 미래로 추적하여 질병 발생률 비교','실험적으로 노출을 통제하는 무작위 대조 실험'],
+    answer:2, explanation:'전향적 코호트: 현재 노출 확인 → 미래 질병 추적. 시간·비용 많이 소요되나 인과관계 증거가 강함.' },
+
+  { id:235, type:'multiple', lecture:'11-12강', category:'연관·인과',
+    question:'환자-대조군(Case-Control) 연구의 특징으로 옳은 것은?',
+    options:['노출군을 미래로 추적하는 전향적 연구','질병군(Case)과 비질병군(Control)의 과거 노출을 후향적으로 비교','특정 시점 단면 조사','무작위 배정으로 노출을 통제'],
+    answer:1, explanation:'환자-대조군: 후향적(Retrospective). 질병군↔대조군 과거 노출 비교. 오즈비(OR) 산출. 희귀 질환에 효율적.' },
+
+  { id:236, type:'multiple', lecture:'9강', category:'발암성',
+    question:'IARC 발암성 분류 중 "인체 발암성 증거 충분(Carcinogenic to humans)"에 해당하는 군은?',
+    options:['3군','2B군','2A군','1군'],
+    answer:3, explanation:'IARC 1군: 인체 발암성 확정. 2A군: 가능성 높음. 2B군: 가능성 있음. 3군: 분류 불가.' },
+
+  { id:237, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)의 생물학적 반감기를 바르게 설명한 것은?',
+    options:['혈중 납(수십 년) > 뼈 납(28~36일)','혈중·뼈 반감기 모두 동일','혈중 납(약 28~36일) < 뼈 납(수십 년)','혈중·뼈 반감기 모두 24시간 이내'],
+    answer:2, explanation:'혈중 납 T½ ≈ 28~36일. 뼈 납 T½ ≈ 10~30년. 뼈에 축적된 납이 오래 지속되는 이유.' },
+
+  { id:238, type:'multiple', lecture:'10강', category:'노출평가',
+    question:'작업환경 노출기준 중 "단 한 순간도 초과해서는 안 되는" 기준은?',
+    options:['TWA(시간가중평균)','STEL(단시간 노출기준)','Ceiling(C, 최고허용농도)','LOAEL'],
+    answer:2, explanation:'Ceiling(최고허용농도): 순간이라도 초과 불가. TWA는 8시간 평균. STEL은 15분 평균 기준.' },
+
+  { id:239, type:'multiple', lecture:'11-12강', category:'제도·법규',
+    question:'GHS(Globally Harmonized System)가 규정하는 내용이 아닌 것은?',
+    options:['화학물질 유해·위험 분류 기준','경고 표지(픽토그램·신호어) 요소','SDS(물질안전보건자료) 16항목 형식','작업환경측정 주기 및 방법'],
+    answer:3, explanation:'GHS: 분류·표지·SDS를 국제 통일. 작업환경측정 주기는 각국 산업안전보건법에서 별도 규정.' },
+
+  { id:240, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 CMP(Chemical Mechanical Planarization) 공정의 목적은?',
+    options:['도판트 이온을 웨이퍼에 주입','웨이퍼 표면을 평탄화하여 다층 배선 형성','회로 패턴을 감광제로 전사','잔류 포토레지스트를 제거'],
+    answer:1, explanation:'CMP: 슬러리+연마 패드로 표면 평탄화. 나노 수준 균일 평탄면 확보. 다층 배선 필수 공정.' },
+
+  { id:241, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb) 킬레이트 치료제로 사용되는 것은?',
+    options:['글루콘산 칼슘(Calcium Gluconate)','글루타치온(GSH)','Ca-EDTA 또는 DMSA(Succimer)','N-아세틸시스테인(NAC)'],
+    answer:2, explanation:'납 킬레이트 치료: Ca-EDTA(정주), DMSA/Succimer(경구). 킬레이트제+납 → 복합체 → 소변 배설.' },
+
+  { id:242, type:'multiple', lecture:'9강', category:'방사성 원소',
+    question:'방사선 차폐 재료와 방사선 종류의 연결이 올바른 것은?',
+    options:['알파선 – 두꺼운 납','베타선 – 종이 한 장','감마선 – 납·콘크리트','중성자선 – 알루미늄판'],
+    answer:2, explanation:'알파=종이·피부. 베타=알루미늄·플라스틱. 감마=납·콘크리트. 중성자=물·파라핀(수소 함유).' },
+
+  { id:243, type:'multiple', lecture:'9강', category:'아르신',
+    question:'아르신(AsH₃) 용혈 메커니즘의 올바른 순서는?',
+    options:['ALAD 억제 → ZPP 증가 → 용혈','아르신 흡수 → GSH 고갈 → 산화 손상 → 용혈','F⁻ + Ca²⁺ → CaF₂ → 막 파괴','SH기 결합 → 효소 불활성화 → 막 파괴'],
+    answer:1, explanation:'아르신 → GSH(글루타치온) 고갈 → 산화 스트레스 → 적혈구 막 손상 → 용혈. ALAD 억제는 납의 기전.' },
+
+  { id:244, type:'multiple', lecture:'11-12강', category:'연관·인과',
+    question:'단면 연구(Cross-sectional Study)의 특징으로 가장 적절한 것은?',
+    options:['과거 노출을 소급하여 질병군과 비교','특정 시점에서 노출·질병 상태를 동시에 파악','미래로 추적하여 질병 발생률 비교','실험적으로 노출 통제'],
+    answer:1, explanation:'단면 연구: 현재 시점 스냅샷. 유병률 파악에 적합. 선후관계 불명확이 단점.' },
+
+  { id:245, type:'multiple', lecture:'10강', category:'노출평가',
+    question:'STEL(단시간 노출기준)에 대한 설명으로 올바른 것은?',
+    options:['8시간 시간가중평균 농도 기준','단 한 순간도 초과 불가한 최고치','15분 이하 단시간 노출이 허용되는 최고 농도','법적으로 금지된 최소 농도'],
+    answer:2, explanation:'STEL(Short-Term Exposure Limit): 15분 이하 단시간 노출이 하루 4회까지 허용되는 최고 농도.' },
+
+  { id:246, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd)의 생물학적 반감기가 극히 긴 이유는?',
+    options:['카드뮴이 뼈에 강하게 결합하기 때문','카드뮴-Metallothionein 복합체로 신장에 장기 저장되기 때문','카드뮴이 혈액에서 분해되지 않기 때문','카드뮴의 장간순환이 특히 강하기 때문'],
+    answer:1, explanation:'카드뮴-MT 복합체: 신장 피질에 장기 저장. 방출·배설 속도 극히 느림 → T½ 10~30년.' },
+
+  { id:247, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'CVD(Chemical Vapor Deposition) 공정에서 자연발화 위험이 있는 가스는?',
+    options:['질소(N₂)','이산화탄소(CO₂)','실란(SiH₄)','아르곤(Ar)'],
+    answer:2, explanation:'SiH₄(실란): 자연발화성(Pyrophoric). CVD에서 실리콘막 형성에 사용. 누출 즉시 공기와 반응하여 화재.' },
+
+  { id:248, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'반도체 공장에서 이소프로필알코올(IPA) 취급 시 가장 주의할 위험은?',
+    options:['중금속 독성','피부 침투로 인한 심장마비','가연성·폭발성(폭발하한 2%)','산소결핍 유발'],
+    answer:2, explanation:'IPA: 폭발하한 2%, 인화점 12°C. 정전기·화기 관리 필수. 누출 시 폭발 위험.' },
+
+  { id:249, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'무기비소(Inorganic As)와 유기비소(Organic As)의 독성 비교로 옳은 것은?',
+    options:['유기비소가 무기비소보다 독성 강함','무기비소가 유기비소보다 독성 강함','두 형태의 독성은 동일','형태와 무관하게 양에만 의존'],
+    answer:1, explanation:'무기비소(As³⁺·As⁵⁺) > 유기비소(MMAV·DMAV) 독성. 무기 3가(As³⁺)가 가장 독성 강함.' },
+
+  { id:250, type:'multiple', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 구리(Cu) 배선 형성 시 적용하는 공법은?',
+    options:['이온주입법','다마신(Damascene) 공법','습식식각법','포토리소그래피만으로 형성'],
+    answer:1, explanation:'다마신 공법: 절연막에 홈을 파고 Cu를 전기도금으로 채운 후 CMP로 평탄화. Cu 배선 표준 공법.' },
+
+  { id:251, type:'multiple', lecture:'11-12강', category:'제도·법규',
+    question:'PSM(공정안전관리, Process Safety Management) 적용 대상은?',
+    options:['모든 사업장','일정 임계량 이상 유해·위험물질 취급 사업장','반도체 공장에만 적용','연구소에만 적용'],
+    answer:1, explanation:'PSM: 대량 유해위험물질(임계량 이상) 취급 사업장 의무 적용. 공정안전보고서·위험성평가 포함.' },
+
+  { id:252, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'밀폐공간 진입 전 가장 중요한 첫 번째 안전 조치는?',
+    options:['방독마스크 착용','작업 완료 후 산소 농도 측정','진입 전 산소·유해가스 농도 측정 및 환기 확보','FOUP 점검'],
+    answer:2, explanation:'밀폐공간: ①진입 전 산소(18% 이상)·유해가스 농도 측정 ②충분한 환기 ③감시인 배치 ④SCBA 준비.' },
+
+  { id:253, type:'multiple', lecture:'9강', category:'중금속 기초',
+    question:'킬레이트제(Chelating Agent)의 작용 원리는?',
+    options:['항산화효소를 활성화하여 ROS 제거','금속 이온과 안정적 복합체 형성 → 소변 배설 촉진','장간순환을 차단하여 흡수 억제','혈뇌장벽을 강화하여 신경 보호'],
+    answer:1, explanation:'킬레이트제: 금속 이온과 결합 → 수용성 복합체 → 신장으로 배설 촉진. 체내 자유 이온 감소.' },
+
+  { id:254, type:'multiple', lecture:'10강', category:'독성동태',
+    question:'혈뇌장벽(BBB)을 통과하기 어려운 물질의 특성은?',
+    options:['지용성이 높고 분자량이 작다','수용성이 높고 분자량이 크다','이온화되지 않는 중성 분자','지질이중막과 친화성이 높다'],
+    answer:1, explanation:'BBB 통과 어려운 물질: 수용성↑·분자량 큰 물질·이온화된 분자. 유기수은은 지용성이라 BBB 쉽게 통과.' },
+
+  { id:255, type:'multiple', lecture:'13-14강', category:'반도체 안전',
+    question:'반도체 공장 화학물질 누출 사고 시 대응 순서로 가장 적절한 것은?',
+    options:['화학물질 확인 → 복구 → 신고 → 대피','신고 → 확인 → 복구 → 대피','감지·인지 → 즉시 대피·경보 → 신고 → 누출 차단','누출 차단 → 피해자 구조 → 신고 → 대피'],
+    answer:2, explanation:'화학물질 누출: 감지·인지 → 즉시 대피+경보 → 119 신고 → 전문가 지휘 하 누출 차단.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 빈칸 (256~270)
+  ══════════════════════════════════════════════════ */
+
+  { id:256, type:'fill', lecture:'10강', category:'독성동태',
+    question:'ADME 순서: 흡수(A) → [①](D) → 대사(M) → 배설(E)',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['분포','Distribution','distribution']],
+    explanation:'ADME = Absorption → Distribution → Metabolism → Excretion.' },
+
+  { id:257, type:'fill', lecture:'10강', category:'노출평가',
+    question:'8시간 시간가중평균 노출기준을 나타내는 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['TWA','TLV-TWA']],
+    explanation:'TWA(Time-Weighted Average): 8시간 평균. ACGIH TLV-TWA, OSHA PEL이 대표적.' },
+
+  { id:258, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'포토리소그래피에서 PR 도포 후 [①](UV 조사) → 현상의 순서로 진행된다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['노광','Exposure','exposure','UV노광']],
+    explanation:'PR 도포 → 노광(Exposure) → 현상(Development). 노광 = UV 조사로 PR 패턴 형성.' },
+
+  { id:259, type:'fill', lecture:'11-12강', category:'연관·인과',
+    question:'코호트 연구에서 노출군과 비노출군의 질병 발생률의 비(比)를 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['상대위험도','RR','Relative Risk','비교위험도']],
+    explanation:'RR(Relative Risk, 상대위험도) = 노출군 발생률 / 비노출군 발생률. RR>1 = 노출이 위험요인.' },
+
+  { id:260, type:'fill', lecture:'9강', category:'발암성',
+    question:'IARC 발암성 분류에서 인체 발암성이 확인된 물질은 [①]군으로 분류된다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['1','1군','Group 1']],
+    explanation:'IARC 1군: Carcinogenic to humans. 6가 크롬·비소·벤젠·석면 등.' },
+
+  { id:261, type:'fill', lecture:'11-12강', category:'제도·법규',
+    question:'GHS 기반 화학물질 위험정보 문서인 SDS(물질안전보건자료)는 총 [①]개 항목으로 구성된다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['16']],
+    explanation:'SDS 16항목: 화학물질 정보·유해성·구성성분·응급처치·소화·누출·취급·저장·노출기준·물리화학성질·독성·환경·폐기·운송·법규·기타.' },
+
+  { id:262, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 웨이퍼 표면을 화학적·기계적으로 평탄화하는 공정의 약자는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['CMP','화학기계연마']],
+    explanation:'CMP(Chemical Mechanical Planarization): 슬러리+연마 패드로 나노 수준 평탄화.' },
+
+  { id:263, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'알파(α)선을 차폐하는 데 충분한 재료는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['종이','종이한장','종이 한 장','피부']],
+    explanation:'알파선: 종이 한 장 또는 피부 표면으로 차단 가능. 단 내부 피폭 시 매우 위험.' },
+
+  { id:264, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'감마(γ)선 차폐에 주로 사용되는 재료는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['납','납(Pb)','콘크리트','Pb']],
+    explanation:'감마선: 높은 투과력으로 납·콘크리트 등 고밀도 재료 필요.' },
+
+  { id:265, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'납(Pb)의 혈중 생물학적 반감기는 약 [①]~[②]일이다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['28'],['36']],
+    explanation:'혈중 납 T½ ≈ 28~36일. 뼈에서는 10~30년.' },
+
+  { id:266, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'카드뮴(Cd)의 신장 내 생물학적 반감기는 약 [①]~[②]년이다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['10'],['30']],
+    explanation:'카드뮴 T½ ≈ 10~30년(평균 20년). Metallothionein 복합체로 신장에 장기 저장.' },
+
+  { id:267, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 웨이퍼 위에 추가 실리콘 결정층을 성장시키는 공정을 [①](이)라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['에피택시','에피탁시','Epitaxy','epitaxy']],
+    explanation:'에피택시(Epitaxy): 기판 결정 구조와 동일한 방향으로 원자 배열 성장.' },
+
+  { id:268, type:'fill', lecture:'9강', category:'아르신',
+    question:'아르신(AsH₃)이 적혈구를 파괴하는 현상을 [①](이)라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['용혈','용혈작용','Hemolysis','hemolysis']],
+    explanation:'용혈(Hemolysis): 아르신 → GSH 고갈 → 산화 손상 → 적혈구 파괴 → 황달·빈혈·신부전.' },
+
+  { id:269, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 전공정 완료 후 웨이퍼를 개별 칩으로 절단하는 공정을 [①](이)라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['다이싱','Dicing','dicing']],
+    explanation:'다이싱(Dicing): 다이아몬드 블레이드나 레이저로 웨이퍼를 개별 다이(Die)로 절단.' },
+
+  { id:270, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'납 중독 시 경구 투여 가능한 킬레이트 치료제는 [①]이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['DMSA','Succimer','succimer']],
+    explanation:'DMSA(Dimercaptosuccinic acid, Succimer): 경구 투여 납 킬레이트제. Ca-EDTA는 정주.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 주관식 (271~275)
+  ══════════════════════════════════════════════════ */
+
+  { id:271, type:'short', lecture:'9강', category:'발암성',
+    question:'IARC 발암성 분류 체계를 설명하고, 반도체 공정과 관련된 IARC 1군 발암물질을 3가지 이상 나열하시오.',
+    modelAnswer:'[IARC 분류]\n1군: 인체 발암성 확정(충분한 증거)\n2A군: 가능성 높음(limited human + sufficient animal)\n2B군: 가능성 있음(limited human or sufficient animal)\n3군: 분류 불가\n\n[반도체 관련 1군]\n①비소(As) 및 무기비소: 피부암·폐암·방광암\n②6가 크롬(Cr⁶⁺): 폐암·비강암\n③벤젠(Benzene): AML(급성골수성백혈병)\n④석면: 중피종(참고)',
+    explanation:'IARC 1군: 6가 크롬·비소·벤젠이 반도체 공정 관련 핵심.' },
+
+  { id:272, type:'short', lecture:'10강', category:'노출평가',
+    question:'생물학적 모니터링(BM)의 장점과 단점을 각각 3가지 이상 서술하시오.',
+    modelAnswer:'[장점]\n①피부·소화기·호흡기 등 모든 경로의 총 노출 통합 평가\n②실제 체내 흡수량(내부 노출) 반영\n③개인별 대사·흡수 차이 포함\n\n[단점]\n①채혈·채뇨 등 침습 또는 협조 필요\n②시료 채취 시기·보관 조건이 결과에 영향\n③모든 물질에 BEI(생물학적 노출지수)가 설정되어 있지 않음\n④원인 특이성 낮은 물질은 해석 어려움',
+    explanation:'BM 장점: 총 노출 통합·개인 차이 반영. 단점: 채취 제약·BEI 부족.' },
+
+  { id:273, type:'short', lecture:'12-13강', category:'반도체 안전',
+    question:'반도체 공장 클린룸 작업자에서 보고된 주요 직업성 건강 문제를 4가지 이상 서술하시오.',
+    modelAnswer:'①생식독성: 여성 자연유산 증가·생리불순·불임 (Glycol ethers, 2-bromopropane 등)\n②혈액암: 벤젠 관련 AML·NHL\n③신경계 증상: 유기용제(IPA, 아세톤) 만성 노출 → 두통·집중력 저하\n④피부질환: 화학물질 접촉성 피부염\n⑤근골격계 질환: 반복 동작·불량 자세\n⑥열 스트레스: 방진복 착용에 의한 고온',
+    explanation:'클린룸 직업병: 생식독성·혈액암·신경·피부·근골격계.' },
+
+  { id:274, type:'short', lecture:'13-14강', category:'반도체 안전',
+    question:'LOTO(Lockout/Tagout) 절차를 단계 순서대로 서술하시오.',
+    modelAnswer:'①에너지원 파악: 전기·가스·압축공기·유압 등 모든 에너지원 확인\n②장비 정지: 정상 절차로 장비 가동 중단\n③에너지원 격리: 차단기 OFF, 밸브 잠금 등 모든 에너지원 차단\n④잠금(Lockout): 차단점에 자물쇠 적용 → 작업자 본인만 열쇠 보관\n⑤표지(Tagout): 경고 태그 부착 "작업 중 투입 금지"\n⑥잔류 에너지 제거: 잔류 압력 해제·방전\n⑦에너지 영점 확인: 시동 버튼으로 격리 확인\n⑧작업 수행 → 완료 후 역순 복구',
+    explanation:'LOTO: 격리→잠금→표지→잔류에너지 제거→확인→작업.' },
+
+  { id:275, type:'short', lecture:'9강', category:'중금속 기초',
+    question:'킬레이트 치료(Chelation Therapy)의 원리와 주요 약물을 서술하시오.',
+    modelAnswer:'[원리] 킬레이트제가 중금속 이온과 결합 → 안정적 수용성 복합체 형성 → 신장·담즙으로 배설 촉진. 체내 자유 이온 상태 감소 → 독성 경감\n\n[주요 약물]\n①Ca-EDTA: 납(Pb) 정주 치료\n②DMSA(Succimer): 납·비소·수은 경구 치료. 소아 납 중독 1차 선택\n③DMPS: 수은·비소 치료\n④BAL(Dimercaprol): 비소·수은·납 주사\n⑤Deferoxamine: 철(Fe) 과부하',
+    explanation:'킬레이트 원리: 금속+킬레이트→복합체→배설. 납=Ca-EDTA/DMSA, 수은=DMPS.' },
+
+  /* ══════════════════════════════════════════════════
+     ★ 추가 설명 맞추기 (276~285)
+  ══════════════════════════════════════════════════ */
+
+  { id:276, type:'match', lecture:'9강', category:'중금속 기초',
+    question:'다음 설명이 가리키는 것은?\n\n"중금속 이온과 결합하여 수용성 복합체를 형성하고 소변 배설을 촉진하는 해독 요법. 납에는 Ca-EDTA·DMSA, 수은에는 DMPS 사용"',
+    options:['항산화 치료','킬레이트 치료(Chelation Therapy)','생체변환 억제 요법','면역 치료'],
+    answer:1, explanation:'킬레이트 치료: 킬레이트제 + 중금속 → 수용성 복합체 → 신장 배설.' },
+
+  { id:277, type:'match', lecture:'11-12강', category:'연관·인과',
+    question:'다음 설명이 가리키는 역학 연구 방법은?\n\n"현재 노출 여부로 노출군·비노출군을 나누고 미래로 추적하여 질병 발생률을 비교하는 전향적 연구"',
+    options:['환자-대조군 연구','단면 연구','전향적 코호트 연구','메타분석'],
+    answer:2, explanation:'전향적 코호트: 현재 노출 → 미래 추적. 인과관계 증거가 강한 연구 설계.' },
+
+  { id:278, type:'match', lecture:'11-12강', category:'제도·법규',
+    question:'다음 설명이 가리키는 것은?\n\n"화학물질 분류 기준, 경고 표지(픽토그램·신호어), SDS 16항목 형식을 UN 주관으로 국제 통일한 시스템"',
+    options:['REACH','SDS','GHS(국제조화시스템)','PSM'],
+    answer:2, explanation:'GHS: Globally Harmonized System. UN 주관. 분류·표지·SDS 국제 표준화.' },
+
+  { id:279, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"반도체 다층 배선 형성 시 웨이퍼 표면을 나노 수준으로 평탄화하는 공정. 슬러리(Slurry)와 연마 패드 사용"',
+    options:['이온주입','에피택시','CMP(화학기계연마)','CVD(화학기상증착)'],
+    answer:2, explanation:'CMP(Chemical Mechanical Planarization): 화학적+기계적 방법으로 표면 평탄화.' },
+
+  { id:280, type:'match', lecture:'9강', category:'아르신',
+    question:'다음 설명이 가리키는 것은?\n\n"아르신(AsH₃) 흡수 후 GSH 고갈 → 산화 손상 → 적혈구 파괴로 이어지는 현상. 황달·빈혈·신부전 유발"',
+    options:['골연화증','비중격천공','용혈(Hemolysis)','ALAD 억제'],
+    answer:2, explanation:'용혈(Hemolysis): 아르신의 대표 급성독성. 황달·빈혈·신부전으로 이어짐.' },
+
+  { id:281, type:'match', lecture:'10강', category:'노출평가',
+    question:'다음 설명이 가리키는 것은?\n\n"하루 8시간, 주 40시간 반복 노출 시 건강에 영향이 없는 시간가중평균 노출 농도 기준"',
+    options:['STEL(단시간 노출기준)','Ceiling(최고허용농도)','TWA(시간가중평균)','IDLH(즉시 위험 농도)'],
+    answer:2, explanation:'TWA(Time-Weighted Average): 8시간 시간가중평균. ACGIH TLV-TWA, OSHA PEL이 대표.' },
+
+  { id:282, type:'match', lecture:'11-12강', category:'연관·인과',
+    question:'다음 설명이 가리키는 역학 연구 방법은?\n\n"특정 시점에서 연구 집단의 노출과 질병 상태를 동시에 측정하는 연구. 유병률 파악에 적합하나 선후관계 파악이 어렵다"',
+    options:['코호트 연구','환자-대조군 연구','단면 연구(Cross-sectional)','메타분석'],
+    answer:2, explanation:'단면 연구: 현재 시점 스냅샷. 비용·시간 절약. 인과관계 파악 한계.' },
+
+  { id:283, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"반도체 전공정 완료 후 패키징 첫 단계. 다이아몬드 블레이드나 레이저로 웨이퍼를 개별 칩(Die)으로 절단하는 공정"',
+    options:['에피택시','이온주입','다이싱(Dicing)','CMP'],
+    answer:2, explanation:'다이싱(Dicing): 후공정 첫 단계. 웨이퍼를 개별 다이(Die, 칩)로 절단.' },
+
+  { id:284, type:'match', lecture:'12-13강', category:'반도체 공정',
+    question:'다음 설명이 가리키는 것은?\n\n"실리콘 기판 위에 동일한 결정 구조의 실리콘 박막을 성장시키는 공정. 소자 특성 향상 목적. SiH₄ 등 가스 사용"',
+    options:['CMP','이온주입','에피택시(Epitaxy)','스트리핑'],
+    answer:2, explanation:'에피택시(Epitaxial Growth): 기판 위 단결정 막 성장. 불순물 제어·소자 특성 향상.' },
+
+  { id:285, type:'match', lecture:'11-12강', category:'연관·인과',
+    question:'다음 설명이 가리키는 것은?\n\n"질병군(Case)과 대조군(Control)에서 과거 노출력을 후향적으로 비교하는 역학 연구. 희귀 질환 연구에 효율적. 오즈비(OR) 산출"',
+    options:['전향적 코호트 연구','단면 연구','환자-대조군 연구','무작위 대조 실험'],
+    answer:2, explanation:'환자-대조군 연구(Case-Control): 후향적, 오즈비(OR) 산출. 적은 비용으로 희귀 질환 연구 가능.' },
+
 ];
 
 /* ══════════════════════════════════════════════════
