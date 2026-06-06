@@ -133,13 +133,11 @@ export default function StartScreen({ onStart }) {
         </div>
 
         {/* 문제 유형 설명 */}
-        <div className="mt-4 grid grid-cols-3 gap-2 text-center text-xs text-gray-400">
-          <div>⭕ OX — 참/거짓 판단</div>
+        <div className="mt-4 grid grid-cols-2 gap-2 text-center text-xs text-gray-400">
           <div>📝 4지선다 — 보기 선택</div>
           <div>✏️ 빈칸 — 단어 입력</div>
           <div>💭 주관식 — 자유 서술</div>
           <div>🔗 맞추기 — 설명→용어</div>
-          <div>🎯 전체 — 랜덤 혼합</div>
         </div>
       </div>
     </div>

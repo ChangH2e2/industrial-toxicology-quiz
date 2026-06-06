@@ -13,7 +13,6 @@ const MSG = (pct) => {
 }
 
 const TYPE_LABELS = {
-  ox: 'OX',
   multiple: '4지선다',
   fill: '빈칸',
   short: '주관식',
@@ -81,9 +80,7 @@ export default function ResultScreen({ results, onRestart, onRestartSame }) {
                   <div className="text-xs bg-white rounded-xl p-3 border border-rose-200">
                     <span className="font-bold text-emerald-600">정답: </span>
                     <span className="text-gray-700">
-                      {item.q.type === 'ox'
-                        ? (item.q.answer ? 'O (참)' : 'X (거짓)')
-                        : item.q.type === 'fill'
+                      {item.q.type === 'fill'
                         ? item.q.answers.map(a => a[0]).join(' / ')
                         : item.q.type === 'multiple' || item.q.type === 'match'
                         ? item.q.options[item.q.answer]

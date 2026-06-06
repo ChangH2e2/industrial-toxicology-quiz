@@ -3,180 +3,28 @@
 
 export const questions = [
 
-  /* ══════════════════════════════════════════════════
-     ★ OX 문제 (40문제)
-  ══════════════════════════════════════════════════ */
 
   // 9강 – 원소·금속·중금속
-  { id:1, type:'ox', lecture:'9강', category:'원소·금속',
-    question:'금속(Metal)은 전기·열 전도성, 연성(늘어남), 가소성(해지짐), 금속광택의 특성을 가진다.',
-    answer:true, explanation:'금속의 4대 특성: 전기/열 전도성, 연성, 가소성, 금속광택.' },
-
-  { id:2, type:'ox', lecture:'9강', category:'원소·금속',
-    question:'아연(Zn)은 인체 필수 미량원소이지만, 과다하면 독성이 나타난다.',
-    answer:true, explanation:'Fe, Zn, Cu, Mn, Co 등은 필수 미량원소이지만 부족·과다 모두 독성 유발.' },
-
-  { id:3, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'중금속(Heavy Metal)의 비중 기준은 4 이상이다.',
-    answer:true, explanation:'비중 4 이상의 금속 원소를 중금속으로 정의한다.' },
-
-  { id:4, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'6가 크롬(Cr⁶⁺)은 3가 크롬(Cr³⁺)보다 독성이 낮다.',
-    answer:false, explanation:'6가 크롬은 3가보다 독성이 훨씬 강하며 폐암·비강암·비중격천공을 유발한다.' },
-
-  { id:5, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'납(Pb)은 칼슘(Ca)과 화학적 성질이 유사하여 뼈에 주로 축적된다.',
-    answer:true, explanation:'납이 Ca 대신 뼈에 축적. 어린이는 Ca 대신 납을 더 잘 흡수해 취약하다.' },
-
-  { id:6, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'카드뮴(Cd)은 인체 필수 미량원소이다.',
-    answer:false, explanation:'카드뮴은 독성 중금속으로 인체에 필요하지 않다. 아연과 유사한 성질로 독성을 나타낸다.' },
-
-  { id:7, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'유기수은(메틸수은)이 무기수은보다 신경독성이 더 강하다.',
-    answer:true, explanation:'유기수은은 지용성이 높아 혈뇌장벽을 쉽게 통과. 미나마타병의 원인.' },
 
   // 9강 – 방사성 원소
-  { id:8, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'방사성 원소는 원자핵이 불안정하여 스스로 방사선을 방출하며 붕괴한다.',
-    answer:true, explanation:'방사성 붕괴는 수 초~수십억 년의 반감기를 가진다.' },
-
-  { id:9, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'알파(α)선의 투과력이 감마(γ)선보다 강하다.',
-    answer:false, explanation:'투과력: 감마선 > 베타선 > 알파선. 알파선은 종이 한 장으로도 차단 가능.' },
-
-  { id:10, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'원자력 발전은 핵분열의 연쇄반응을 제어봉으로 통제하여 전기를 생산한다.',
-    answer:true, explanation:'U-235 + 중성자 → 핵분열 + 에너지 + 중성자(연쇄반응). 제어봉으로 반응 속도 조절.' },
 
   // 9강 – 생체축적
-  { id:11, type:'ox', lecture:'9강', category:'생체축적',
-    question:'생물학적 반감기가 짧을수록 생체축적이 더 잘 된다.',
-    answer:false, explanation:'반감기가 길수록 체내에 오래 머물러 생체축적이 심해진다.' },
-
-  { id:12, type:'ox', lecture:'9강', category:'생체축적',
-    question:'생물농축(Biomagnification)은 먹이사슬 상위 생물일수록 독성물질 농도가 높아지는 현상이다.',
-    answer:true, explanation:'생체축적이 먹이사슬을 통해 증폭되는 것이 생물농축.' },
-
-  { id:13, type:'ox', lecture:'9강', category:'생체축적',
-    question:'중금속의 주요 배설 경로는 소변이며, 장간순환은 체내 축적을 증가시킨다.',
-    answer:true, explanation:'장간순환: 간에서 담즙으로 분비 → 장 흡수 → 재순환 → 체내 축적 증가.' },
 
   // 9강 – ROS·산화적 스트레스
-  { id:14, type:'ox', lecture:'9강', category:'ROS·산화적 스트레스',
-    question:'활성산소종(ROS)은 세포막(지질), 단백질, DNA 세 가지를 모두 손상시킨다.',
-    answer:true, explanation:'ROS는 수명이 짧지만 반응성이 매우 커 세포의 모든 주요 구성성분을 공격한다.' },
-
-  { id:15, type:'ox', lecture:'9강', category:'ROS·산화적 스트레스',
-    question:'납(Pb)과 수은(Hg)도 산화적 스트레스를 통해 독성을 나타낸다.',
-    answer:true, explanation:'납, 수은, 카드뮴 등 대부분의 독성 중금속이 ROS 생성을 통해 독성을 유발한다.' },
 
   // 9강 – 필수금속 치환·신경독성
-  { id:16, type:'ox', lecture:'9강', category:'필수금속 치환',
-    question:'Metallothionein은 중금속 이온 노출 시 세포에서 합성되며 카드뮴·아연·구리·수은과 결합한다.',
-    answer:true, explanation:'Metallothionein은 금속 이온 해독 핵심 단백질. 카드뮴·아연·구리·수은과 높은 친화력.' },
-
-  { id:17, type:'ox', lecture:'9강', category:'신경독성',
-    question:'어린이가 납 독성에 취약한 이유 중 하나는 혈뇌장벽이 성인보다 미발달 상태이기 때문이다.',
-    answer:true, explanation:'어린이: ①많은 호흡량, ②칼슘 대신 납 쉽게 흡수, ③혈뇌장벽 미성숙, ④CNS 발달 중.' },
 
   // 9강 – 발암성·아르신
-  { id:18, type:'ox', lecture:'9강', category:'발암성',
-    question:'비소(As)는 IARC 1군 발암물질로 피부암·폐암·방광암을 유발한다.',
-    answer:true, explanation:'비소는 이온주입 공정, 농약 등에서 노출. IARC 1군 확정 발암물질.' },
-
-  { id:19, type:'ox', lecture:'9강', category:'아르신',
-    question:'아르신(AsH₃)은 반도체 이온주입 공정에서 사용되며, 적혈구를 파괴하는 용혈작용을 일으킨다.',
-    answer:true, explanation:'아르신(AsH₃)은 매우 강한 급성독성과 용혈작용(hemolysis)으로 황달·빈혈·신부전을 유발.' },
-
-  { id:20, type:'ox', lecture:'9강', category:'아르신',
-    question:'아르신(AsH₃)의 OSHA 허용노출기준(PEL)은 0.5 ppm이다.',
-    answer:false, explanation:'OSHA PEL은 0.05 ppm (0.2 mg/m³). NIOSH IDLH는 3 ppm.' },
 
   // 10강 – 노출평가·ADME
-  { id:21, type:'ox', lecture:'10강', category:'노출평가',
-    question:'생물학적 모니터링(BM)은 작업장 공기 중 농도를 측정하는 외부 노출 평가 방법이다.',
-    answer:false, explanation:'BM은 혈액·소변 등 생체 검체로 내부 노출을 평가. 작업환경측정이 외부 노출 평가.' },
-
-  { id:22, type:'ox', lecture:'10강', category:'독성동태',
-    question:'생체변환(Biotransformation)은 주로 간에서 이루어지며, 항상 독성을 감소시킨다.',
-    answer:false, explanation:'일부 물질은 생체변환 후 독성이 오히려 증가(bioactivation). 예: 벤젠→에폭사이드.' },
-
-  { id:23, type:'ox', lecture:'10강', category:'바이오마커',
-    question:'바이오마커는 노출(Exposure), 영향(Effects), 감수성(Susceptibility) 세 종류로 분류된다.',
-    answer:true, explanation:'노출마커→영향마커→감수성마커로 질병 스펙트럼상 각 위치에 대응.' },
-
-  { id:24, type:'ox', lecture:'10강', category:'독성 개념',
-    question:'감수성(Susceptibility)은 취약성(Vulnerability)보다 더 포괄적인 개념이다.',
-    answer:false, explanation:'취약성(Vulnerability)이 더 포괄적. 감수성(내재적 경향) + 노출수준 + 대처능력까지 포함.' },
-
-  { id:25, type:'ox', lecture:'10강', category:'독성 개념',
-    question:'비가역적(Irreversible) 질병은 원인 제거 후에도 영구적으로 회복되지 않는다.',
-    answer:true, explanation:'암, 신경 손상, 섬유화 등이 비가역적 질병의 예. 가역적은 원인 제거로 회복 가능.' },
 
   // 11-12강 – 제도·법규
-  { id:26, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'작업환경측정은 법적으로 6개월에 1회 이상, 연 2회 실시해야 한다.',
-    answer:true, explanation:'산업안전보건법 제125조. 측정 결과는 근로자에게 알려야 함.' },
-
-  { id:27, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'특수건강검진은 외부 노출만을 평가하는 검진이다.',
-    answer:false, explanation:'특수건강검진은 내부 노출 및 건강영향 평가. 작업환경측정이 외부 노출 평가.' },
-
-  { id:28, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'역학적 연관(Association)이 존재하면 반드시 인과관계(Causality)가 성립한다.',
-    answer:false, explanation:'연관은 집단 수준의 경향성. 개인 인과는 별도 판단 필요. 연관 ≠ 인과.' },
 
   // 11-12강 – ISO·ESG
-  { id:29, type:'ox', lecture:'11-12강', category:'경영시스템',
-    question:'ISO 14000은 환경경영시스템(EMS), ISO 45000은 안전보건경영시스템(OSHMS)이다.',
-    answer:true, explanation:'ISO 14000(환경, EMS) / ISO 45000(OSHMS, 2018년 발행).' },
-
-  { id:30, type:'ox', lecture:'11-12강', category:'경영시스템',
-    question:'ISO 45000(OSHMS)은 2018년 3월에 발행되었다.',
-    answer:true, explanation:'2013년 10월 제정, 2018년 3월 발행. 최고경영자 리더십 강조가 특징.' },
-
-  { id:31, type:'ox', lecture:'11-12강', category:'ESG·CSR',
-    question:'ESG는 Environment(환경), Safety(안전), Governance(지배구조)의 약자이다.',
-    answer:false, explanation:'ESG = Environment(환경) + Social(사회) + Governance(지배구조).' },
-
-  { id:32, type:'ox', lecture:'11-12강', category:'ESG·CSR',
-    question:'RE100은 2050년까지 사용 전력의 100%를 재생에너지로 충당하겠다는 기업 이니셔티브이다.',
-    answer:true, explanation:'삼성 등 반도체 기업도 RE100 선언. 탄소중립 목표와 연계.' },
-
-  { id:33, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'탄소중립 목표는 산업화 이전 대비 지구 평균 기온 상승을 1.5°C 이내로 유지하는 것이다.',
-    answer:true, explanation:'파리협정 목표. 2022년 이미 1.1°C 상승. 우리나라: 2030년 40% 감축, 2050년 넷제로.' },
 
   // 12-13강 – 반도체 기초·공정
-  { id:34, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'현재 반도체 생산 주류 웨이퍼 크기는 300mm이다.',
-    answer:true, explanation:'2000년대 이후 300mm 웨이퍼가 표준. 클수록 한 번에 더 많은 칩 생산 가능.' },
-
-  { id:35, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'클린룸(Clean Room)은 먼지가 없으므로 화학물질 노출 위험도 낮다.',
-    answer:false, explanation:'클린룸은 먼지는 없지만 수십~수백 종의 복합 화학물질에 저농도로 만성 노출.' },
-
-  { id:36, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 이온주입 공정에서 고전압 이온 가속 시 X선(제동복사)이 발생할 수 있다.',
-    answer:true, explanation:'200~400kV 고전압 이온이 금속 표면에 충돌 시 X선 발생. 이온박스 내부 정비 시 위험.' },
-
-  { id:37, type:'ox', lecture:'12-13강', category:'반도체 안전',
-    question:'불산(HF)은 강산이므로 피부 접촉 즉시 심한 통증이 나타난다.',
-    answer:false, explanation:'HF는 약산이지만 피부 침투성이 강하다. 통증이 지연되어 노출 인식이 늦어 더 위험.' },
-
-  { id:38, type:'ox', lecture:'12-13강', category:'반도체 안전',
-    question:'반도체 여성 근로자에서 자연유산(SAB), 선천성 기형, 생리이상 등의 생식독성이 보고된다.',
-    answer:true, explanation:'1995년 국내 반도체 공장에서 2-bromopropane에 의한 생식독성 사례 발생.' },
 
   // 13-14강 – SEMI·안전
-  { id:39, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'TMAH(테트라메틸암모늄수산화물)는 냄새와 색이 없어 노출 감지가 어렵다.',
-    answer:true, explanation:'TMAH의 가장 큰 위험성 중 하나. 무색·무취로 인지가 어렵고 피부 침투성이 강함.' },
-
-  { id:40, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'질소(N₂) 자체는 독성이 없지만 밀폐공간에서 누출 시 산소결핍을 유발해 질식사를 일으킬 수 있다.',
-    answer:true, explanation:'2015년 전자공장 건설현장에서 질소 누출로 3명 사망. 산소 18% 미만 = 산소결핍.' },
 
   /* ══════════════════════════════════════════════════
      ★ 4지선다 (40문제)
@@ -735,110 +583,6 @@ export const questions = [
     answer:2, explanation:'패키징(후공정): 웨이퍼 → 칩 절단 → 조립 → 포장. 전공정(Fab)과 구별.' },
 
   /* ══════════════════════════════════════════════════
-     ★ 추가 OX (25문제, 131~155)
-  ══════════════════════════════════════════════════ */
-
-  { id:131, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'납(Pb)은 혈액 내 ALAD(아미노레불린산 탈수효소)를 억제하여 헴(Heme) 합성을 방해한다.',
-    answer:true, explanation:'ALAD 억제 → δ-ALA 혈중 축적 → 헴 합성 장애 → 빈혈. ZPP 증가도 관찰.' },
-
-  { id:132, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'원소수은(Hg⁰)은 상온에서 증기를 발생시키며, 호흡기를 통해 주로 흡수된다.',
-    answer:true, explanation:'원소수은 증기 흡입이 주요 노출 경로. 무기수은(Hg²⁺)은 주로 신장에 축적.' },
-
-  { id:133, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'카드뮴(Cd)의 표적 장기는 신장이며, 세뇨관 손상 시 β₂-마이크로글로불린이 소변으로 배출된다.',
-    answer:true, explanation:'카드뮴 → 신장 세뇨관 손상 → 재흡수 장애 → β₂-마이크로글로불린 소변 배출 증가.' },
-
-  { id:134, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'니켈(Ni)은 접촉성 피부염(니켈 알레르기)과 폐암·비강암을 유발할 수 있다.',
-    answer:true, explanation:'니켈: IARC 1군. 피부 알레르기(가장 흔한 금속 알레르기)와 흡입 시 폐암.' },
-
-  { id:135, type:'ox', lecture:'9강', category:'발암성',
-    question:'베릴륨(Be)은 IARC 1군 발암물질로, 과다 노출 시 만성 베릴륨증(폐육아종증)이 발생한다.',
-    answer:true, explanation:'베릴륨: 항공우주·전자 부품에 사용. 호흡기 흡입 → 면역매개 폐육아종증.' },
-
-  { id:136, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'6가 크롬(Cr⁶⁺)의 주요 체내 흡수 경로는 피부이다.',
-    answer:false, explanation:'6가 크롬의 주요 흡수 경로는 호흡기(도금·용접 흄). 피부 경로도 가능하나 주경로는 호흡기.' },
-
-  { id:137, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'방사성 원소의 반감기(Half-life)는 온도·압력에 무관하게 일정한 물리적 상수이다.',
-    answer:true, explanation:'반감기는 핵의 고유 특성. 화학반응과 달리 온도·압력에 영향받지 않음.' },
-
-  { id:138, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'알파(α)선은 외부 피폭보다 내부 피폭(흡입·섭취) 시 생물학적 위해가 더 크다.',
-    answer:true, explanation:'알파선은 투과력이 약해 피부 통과 못 하지만, 내부에서 방출 시 주변 조직을 강하게 손상.' },
-
-  { id:139, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'핵융합(Nuclear Fusion)은 현재 상용 원자력 발전소에서 주로 사용하는 방식이다.',
-    answer:false, explanation:'상용 원전은 핵분열(Fission) 이용. 핵융합은 아직 연구 단계(ITER 프로젝트 등).' },
-
-  { id:140, type:'ox', lecture:'9강', category:'신경독성',
-    question:'납(Pb) 노출 시 아연 대신 납이 포르피린 고리에 결합해 ZPP(아연프로토포르피린)이 형성된다.',
-    answer:true, explanation:'ZPP: Zn 대신 Pb가 결합된 비정상 헴 전구체. 납의 영향 바이오마커로 혈액에서 측정.' },
-
-  { id:141, type:'ox', lecture:'10강', category:'독성 개념',
-    question:'NOAEL(무관찰 독성량)은 독성 영향이 관찰되지 않는 최고 용량이다.',
-    answer:true, explanation:'NOAEL(No Observed Adverse Effect Level). LOAEL은 독성이 처음 관찰되는 최저 용량.' },
-
-  { id:142, type:'ox', lecture:'10강', category:'독성동태',
-    question:'지용성(fat-soluble) 독성물질은 수용성 물질보다 피부를 통해 더 잘 흡수된다.',
-    answer:true, explanation:'피부는 지질이중막 구조라 지용성이 더 잘 통과. 유기용제·농약 등이 해당.' },
-
-  { id:143, type:'ox', lecture:'10강', category:'독성동태',
-    question:'무기수은(Hg²⁺)은 주로 신장에, 유기수은(메틸수은)은 주로 중추신경계에 축적된다.',
-    answer:true, explanation:'무기수은 → 신장(단백질 결합). 유기수은(지용성) → 혈뇌장벽 통과 → 뇌·신경계.' },
-
-  { id:144, type:'ox', lecture:'10강', category:'바이오마커',
-    question:'모발(Hair) 바이오마커는 혈액·소변 바이오마커에 비해 과거 장기간 노출을 추정하는 데 유리하다.',
-    answer:true, explanation:'모발은 월 약 1cm 성장. 분절 분석 → 수개월 노출 이력 파악 가능.' },
-
-  { id:145, type:'ox', lecture:'11-12강', category:'경영시스템',
-    question:'ISO 국제표준은 강제적 법적 기준이 아닌 자발적 참여 기준이다.',
-    answer:true, explanation:'ISO는 자발적(voluntary) 국제표준. 단, 법령·계약·구매 조건에 의해 사실상 의무화되는 경우도 있음.' },
-
-  { id:146, type:'ox', lecture:'12-13강', category:'반도체 안전',
-    question:'실란(SiH₄)은 공기 중에서 자연발화(Pyrophoric)하는 특성이 있어 화재·폭발 위험이 있다.',
-    answer:true, explanation:'실란 누출 시 공기와 반응하여 불꽃 없이도 발화. 반도체 공정의 주요 화재원인.' },
-
-  { id:147, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'포스핀(PH₃)은 반도체 P형(p-type) 도핑에 사용되는 가스이다.',
-    answer:false, explanation:'포스핀(PH₃)은 인(P) 공급원으로 N형(n-type) 도핑에 사용. P형에는 붕소계 가스(BF₃, B₂H₆) 사용.' },
-
-  { id:148, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'불산(HF) 피부 접촉 즉시 응급처치로 글루콘산 칼슘(Calcium Gluconate) 겔을 도포한다.',
-    answer:true, explanation:'Ca²⁺ 보충으로 F⁻ 이온 중화. 글루콘산칼슘 겔 도포는 불산 피부 노출의 필수 응급처치.' },
-
-  { id:149, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'반도체 클린룸의 ISO 등급 숫자가 낮을수록 더 청정한 환경이다.',
-    answer:true, explanation:'ISO Class 1이 가장 청정. 반도체 전공정은 Class 1~5 수준. 숫자↓ = 허용 파티클 수↓.' },
-
-  { id:150, type:'ox', lecture:'13-14강', category:'SEMI',
-    question:'SEMI S2는 반도체 장비 환경·안전·보건(EHS) 가이드라인이다.',
-    answer:true, explanation:'SEMI S2: EHS(Environmental Health Safety) Guideline for Semiconductor Manufacturing Equipment.' },
-
-  { id:151, type:'ox', lecture:'13-14강', category:'SEMI',
-    question:'SEMI S8은 반도체 장비 위험성평가(Risk Assessment) 방법에 관한 가이드라인이다.',
-    answer:false, explanation:'S8은 반도체 장비 인간공학(Ergonomics) 가이드라인. 위험성평가는 SEMI S10.' },
-
-  { id:152, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'Hill의 인과기준에는 연관의 강도(Strength), 일관성(Consistency), 시간적 선행성(Temporality), 노출-반응 관계가 포함된다.',
-    answer:true, explanation:'Hill\'s criteria 9가지: 강도·일관성·특이성·시간성·노출반응관계·실험성·생물학적개연성·유추·일관성.' },
-
-  { id:153, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'우리나라의 2050 탄소중립 목표는 온실가스 순 배출량(Net Emission) 제로(Zero)이다.',
-    answer:true, explanation:'넷제로(Net Zero) = 탄소중립: 온실가스 배출량 = 흡수·제거량. 한국 2050 탄소중립 공식 목표.' },
-
-  { id:154, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'반도체 자동물류시스템(AMHS)은 클린룸 내 웨이퍼를 작업자 없이 자동으로 운반한다.',
-    answer:true, explanation:'AMHS(Automated Material Handling System): 천장 OHT로 FOUP 자동 이송. 작업자 노출 최소화.' },
-
-  { id:155, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'건식식각(Dry Etching)은 불산(HF) 수용액을 사용하는 식각 방법이다.',
-    answer:false, explanation:'건식식각 = 플라즈마(기체) 이용. 습식식각(Wet Etching)이 불산(HF) 수용액 사용.' },
-
-  /* ══════════════════════════════════════════════════
      ★ 추가 4지선다 (25문제, 156~180)
   ══════════════════════════════════════════════════ */
 
@@ -1145,90 +889,6 @@ export const questions = [
     answer:0, explanation:'Scope 1: 자사 직접 배출. Scope 2: 구매 전력 간접. Scope 3: 공급망·소비·폐기 등 가치사슬 전체.' },
 
   /* ══════════════════════════════════════════════════
-     ★ 추가 OX (211~230)
-  ══════════════════════════════════════════════════ */
-
-  { id:211, type:'ox', lecture:'9강', category:'발암성',
-    question:'IARC 1군 발암물질은 인간에 대한 발암성이 충분히 확인된 물질이다.',
-    answer:true, explanation:'IARC 1군: Carcinogenic to humans. 6가 크롬·비소·벤젠·석면 등이 해당.' },
-
-  { id:212, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'납(Pb)의 생물학적 반감기는 혈중(약 28~36일)보다 뼈에서(수십 년)가 훨씬 길다.',
-    answer:true, explanation:'혈중 납 T½ ≈ 28~36일. 뼈 납 T½ ≈ 10~30년. 뼈에 축적된 납은 오랫동안 재방출.' },
-
-  { id:213, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'카드뮴(Cd)의 신장 내 생물학적 반감기는 10~30년으로 매우 길다.',
-    answer:true, explanation:'카드뮴-Metallothionein 복합체로 신장에 장기 저장. 반감기 10~30년이 가장 대표적 특성.' },
-
-  { id:214, type:'ox', lecture:'10강', category:'노출평가',
-    question:'TLV-TWA는 하루 8시간, 주 40시간 반복 노출 시 건강에 해롭지 않은 시간가중평균 농도이다.',
-    answer:true, explanation:'TWA(Time-Weighted Average): 8시간 평균 기준. ACGIH TLV-TWA가 대표적.' },
-
-  { id:215, type:'ox', lecture:'10강', category:'독성동태',
-    question:'독성동태(Toxicokinetics) ADME의 순서는 흡수(A) → 분포(D) → 대사(M) → 배설(E)이다.',
-    answer:true, explanation:'ADME = Absorption → Distribution → Metabolism → Excretion. 독성학 기본 개념.' },
-
-  { id:216, type:'ox', lecture:'10강', category:'독성동태',
-    question:'생체변환 1상 반응의 CYP450 효소는 주로 폐(lung)에 분포한다.',
-    answer:false, explanation:'CYP450은 주로 간(liver)에 분포. 소장·폐·신장에도 일부 존재.' },
-
-  { id:217, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'코호트(Cohort) 연구는 노출군·비노출군을 현재에서 미래로 추적하는 전향적 연구이다.',
-    answer:true, explanation:'전향적 코호트: 현재 노출 확인 → 미래 질병 발생 추적. 시간·비용 많이 소요.' },
-
-  { id:218, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'환자-대조군(Case-Control) 연구는 전향적(Prospective) 연구이다.',
-    answer:false, explanation:'환자-대조군은 후향적(Retrospective) 연구. 질병군과 대조군에서 과거 노출 비교.' },
-
-  { id:219, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'GHS(Globally Harmonized System)는 화학물질의 분류 기준과 경고표지·SDS 형식을 국제적으로 통일하는 시스템이다.',
-    answer:true, explanation:'GHS: UN 주관. 화학물질 분류·표지·SDS 국제 표준화.' },
-
-  { id:220, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'GHS 기반 SDS(물질안전보건자료)는 총 16가지 항목으로 구성된다.',
-    answer:true, explanation:'SDS 16항목: 화학물질 정보·유해성·구성성분·응급처치·소화·누출·취급·저장·노출기준 등.' },
-
-  { id:221, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 포토리소그래피의 세부 단계는 "PR 도포 → 노광 → 현상" 순이다.',
-    answer:true, explanation:'PR 도포(Coat) → 소프트 베이크 → 노광(UV Exposure) → 현상(TMAH) → 하드 베이크.' },
-
-  { id:222, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 에피택시(Epitaxy) 공정은 웨이퍼 위에 추가 실리콘 결정층을 성장시키는 공정이다.',
-    answer:true, explanation:'에피택시: 기판 결정 구조와 동일한 방향으로 원자 배열 성장. 소자 특성 향상.' },
-
-  { id:223, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 CMP 공정은 화학적·기계적 방법으로 웨이퍼 표면을 평탄화하는 공정이다.',
-    answer:true, explanation:'CMP(Chemical Mechanical Planarization): 슬러리+연마 패드. 나노 수준 평탄화.' },
-
-  { id:224, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'이소프로필알코올(IPA)은 반도체 웨이퍼·장비 세정에 사용되며, 가연성·폭발성이 있다.',
-    answer:true, explanation:'IPA(C₃H₈O): 폭발하한(LEL) 2%, 인화점 12°C. 정전기·화기 관리 필수.' },
-
-  { id:225, type:'ox', lecture:'9강', category:'아르신',
-    question:'아르신(AsH₃)의 용혈 메커니즘은 글루타치온(GSH) 고갈 → 산화 손상 → 적혈구 파괴이다.',
-    answer:true, explanation:'아르신 → GSH 고갈 → ROS 축적 → 적혈구 막 산화 손상 → 용혈 → 황달·빈혈·신부전.' },
-
-  { id:226, type:'ox', lecture:'9강', category:'중금속 기초',
-    question:'납 킬레이트 치료제로 Ca-EDTA(정주)와 DMSA/Succimer(경구)가 사용된다.',
-    answer:true, explanation:'킬레이트제 + 중금속 → 수용성 복합체 → 신장 배설. 납에는 Ca-EDTA, DMSA 사용.' },
-
-  { id:227, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'아산화질소(N₂O)는 반도체 산화막·질화막 형성 공정에서 산화제로 사용된다.',
-    answer:true, explanation:'N₂O: 고온에서 분해되어 산소 공급 → SiO₂ 또는 Si₃N₄ 형성에 활용.' },
-
-  { id:228, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'OSHA PEL은 미국 법정 허용 노출기준이고, ACGIH TLV는 산업위생 전문가의 자발적 권고 기준이다.',
-    answer:true, explanation:'OSHA PEL: 법적 강제력. ACGIH TLV: 자발적이지만 과학적으로 자주 업데이트. 실제로 더 엄격한 경우 많음.' },
-
-  { id:229, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 다이싱(Dicing)은 전공정(Fab) 완료 후 웨이퍼를 개별 칩으로 절단하는 후공정이다.',
-    answer:true, explanation:'다이싱: 다이아몬드 블레이드나 레이저 절단. 후공정(패키징) 첫 단계.' },
-
-  { id:230, type:'ox', lecture:'9강', category:'방사성 원소',
-    question:'베타(β)선 차폐에는 알루미늄판이나 플라스틱이 사용된다.',
-    answer:true, explanation:'알파선=종이. 베타선=알루미늄·플라스틱. 감마선=납·콘크리트. 중성자=물·파라핀.' },
-
-  /* ══════════════════════════════════════════════════
      ★ 추가 4지선다 (231~255) — 순서·ADME·역학 포함
   ══════════════════════════════════════════════════ */
 
@@ -1533,150 +1193,6 @@ export const questions = [
     question:'다음 설명이 가리키는 것은?\n\n"질병군(Case)과 대조군(Control)에서 과거 노출력을 후향적으로 비교하는 역학 연구. 희귀 질환 연구에 효율적. 오즈비(OR) 산출"',
     options:['전향적 코호트 연구','단면 연구','환자-대조군 연구','무작위 대조 실험'],
     answer:2, explanation:'환자-대조군 연구(Case-Control): 후향적, 오즈비(OR) 산출. 적은 비용으로 희귀 질환 연구 가능.' },
-
-  /* ══════════════════════════════════════════════════
-     ★ 3차 추가 OX (286~320)
-  ══════════════════════════════════════════════════ */
-
-  { id:286, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'산업재해보상보험법(산재법)은 근로자의 치료비·휴업급여·장해급여·유족급여 등을 보상하는 사회보험이다.',
-    answer:true, explanation:'산재법 급여: 요양급여(치료비)·휴업급여(소득보전)·장해급여·유족급여·간병급여 등 포함. 사용자 100% 부담(보험료).' },
-
-  { id:287, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'우리나라 산업재해 발생 사업장의 약 80%는 50인 미만 소규모 사업장이다.',
-    answer:true, explanation:'소규모 사업장(50인 미만)에서 재해 발생 집중. 안전관리 인력·시스템 부족이 주요 원인.' },
-
-  { id:288, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'우리나라 산재 사망 통계에서 사고 사망보다 질병 사망이 더 많다.',
-    answer:true, explanation:'직업성 질환 사망(뇌심혈관계·암·근골격계 등)이 사고 사망을 상회. 잠복기 긴 만성 질환 특성.' },
-
-  { id:289, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'삼성전자 반도체 직업병 보상위원회(삼성-반올림 합의)는 산재법이 아닌 자체 재정지원 방식으로 보상을 시행한다.',
-    answer:true, explanation:'삼성 보상위원회: 산재법과 별도 자율 보상. 반올림과의 합의로 2018년 출범. 산재 인정과는 법적으로 다름.' },
-
-  { id:290, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'PCB(Printed Circuit Board)는 전자소자를 연결·지지하는 인쇄회로기판이며, IC(Integrated Circuit)와 구분된다.',
-    answer:true, explanation:'PCB: 배선 연결 기판. IC: 트랜지스터 등 수천~수십억 개 소자를 실리콘 칩에 집적한 회로.' },
-
-  { id:291, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'반도체 생산의 3대 공정은 ①웨이퍼 제조, ②Fab(전공정), ③패키징·테스트(후공정)이다.',
-    answer:true, explanation:'웨이퍼 제조(잉곳→슬라이싱) → 전공정(Fab, 회로 형성) → 후공정(패키징·테스트).' },
-
-  { id:292, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'실리콘 웨이퍼는 모래(SiO₂)에서 탄소 환원으로 순수 Si를 얻은 후 잉곳(Ingot)으로 성장시켜 슬라이싱하여 만든다.',
-    answer:true, explanation:'SiO₂ + C → 전기용광로 → 순수 Si → 초크랄스키법 잉곳 성장 → 웨이퍼 슬라이싱.' },
-
-  { id:293, type:'ox', lecture:'12-13강', category:'반도체 기초',
-    question:'반도체 웨이퍼 크기는 시대가 지남에 따라 작아지는 추세이다.',
-    answer:false, explanation:'웨이퍼 크기는 점점 커짐: 50→75→100→125→150→200→300mm. 크기 증가 = 생산성 향상.' },
-
-  { id:294, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'포토리소그래피 공정에서 수은 UV 램프가 파손되면 수은 증기 노출 위험이 발생한다.',
-    answer:true, explanation:'포토 공정 UV 광원: 수은 램프. 파손 시 수은 증기 노출 → 신경독성. 오존(O₃)도 UV 조사로 발생.' },
-
-  { id:295, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'포토리소그래피 공정에서 UV 조사로 오존(O₃)이 생성될 수 있다.',
-    answer:true, explanation:'UV 램프(단파장)가 공기 중 산소를 분해 → O₃ 발생. 폐 자극·호흡기 손상.' },
-
-  { id:296, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 이온주입 장비 중 고전압 임플란터(IHE)만 X선(제동복사)을 발생시킨다.',
-    answer:true, explanation:'IHE(High Energy Implanter, 200~400kV): 고전압 이온 가속 → X선 발생. 중전압·고전류 임플란터는 X선 발생 없음.' },
-
-  { id:297, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'이온주입 장비의 이온박스 내부 정비 시 비소(As) 분말 노출 가능성이 있다.',
-    answer:true, explanation:'이온주입 후 이온박스 내벽에 As, P 등 도판트 물질 잔류. 정비 시 분진 흡입 위험.' },
-
-  { id:298, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'금속증착 공정에서 정비 작업자가 운전 작업자보다 유해금속에 더 많이 노출된다.',
-    answer:true, explanation:'금속증착(PVD/CVD): 운전 중은 진공 밀폐. 정비 시 챔버 개방 → 증착된 금속(Al, Cu, W, Ni 등) 분진 노출.' },
-
-  { id:299, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'공정한 전환(Just Transition)은 고탄소 산업에서 저탄소 경제로 전환할 때 발생하는 경제적·사회적 비용을 공정하게 분담하는 개념이다.',
-    answer:true, explanation:'Just Transition: ILO·UN 지지. 탄소집약 산업 근로자·지역사회가 전환 과정에서 불이익을 받지 않도록 지원.' },
-
-  { id:300, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'칼 세이건의 코스모스 우주달력에서 현생인류의 출현은 12월 31일 23시 59분에 해당한다.',
-    answer:true, explanation:'138억 년 우주 역사를 1년으로 압축. 호모 사피엔스(약 20만 년 전) ≈ 12월 31일 23:52, 기록 역사 ≈ 12월 31일 23:59:32.' },
-
-  { id:301, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'AMHS(자동물류시스템)는 클린룸 내 웨이퍼 박스(FOUP)를 천장 레일로 자동 운반하여 작업자 직접 운반을 최소화한다.',
-    answer:true, explanation:'AMHS: OHT(Overhead Hoist Transport) 포함. 작업자 운반 최소화 → 파티클 감소·생산성 향상. 단, 충돌·끼임 위험.' },
-
-  { id:302, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'2018년 삼성전자 반도체 공장에서 CO₂ 소화설비 오작동으로 질식 사고가 발생하였다.',
-    answer:true, explanation:'2018년 CO₂ 소화설비 자동 방출 오작동 → 밀폐 공간 CO₂ 농도 급상승 → 작업자 질식 사망 사고.' },
-
-  { id:303, type:'ox', lecture:'13-14강', category:'반도체 안전',
-    question:'반도체 공장의 질소(N₂)는 불활성으로 독성이 없으므로 밀폐공간에서도 안전하다.',
-    answer:false, explanation:'질소는 독성은 없으나 밀폐공간에서 산소를 치환 → 산소결핍 → 의식상실·질식 위험. "불활성 ≠ 안전".' },
-
-  { id:304, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'포름알데히드(HCHO)는 IARC 1군 발암물질로 백혈병(혈액암)과 연관이 있다.',
-    answer:true, explanation:'포름알데히드: IARC 1군(2004년 비인두암, 2009년 백혈병 추가). 반도체 클린룸 포토 공정 등에서 발생.' },
-
-  { id:305, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 공장 여성 근로자의 자연유산(SAB) 증가와 생리불순이 생식독성의 주요 지표로 보고되었다.',
-    answer:true, explanation:'SAB(Spontaneous Abortion, 자연유산): 반도체 공장 역학 연구에서 일반 여성 대비 유의한 증가 보고.' },
-
-  { id:306, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'생식독성은 자연유산(SAB), 선천성 기형, 생식력 감소, 월경이상(MA) 4가지로 분류된다.',
-    answer:true, explanation:'생식독성 4가지: ①SAB(자연유산) ②선천성 기형 ③생식력 감소(불임) ④MA(월경이상, Menstrual Abnormality).' },
-
-  { id:307, type:'ox', lecture:'13-14강', category:'SEMI',
-    question:'SEMI C1은 반도체 공정용 화학물질의 순도 기준을 규정한다.',
-    answer:true, explanation:'SEMI C1: 공정 화학물질 순도 등급(SEMI Grade). C2는 알루미늄 배선용 등 세부 규격별 별도 표준.' },
-
-  { id:308, type:'ox', lecture:'13-14강', category:'SEMI',
-    question:'SEMI F57은 반도체 공정에서 사용하는 고분자(Polymer) 재질 부품의 청정도 기준이다.',
-    answer:true, explanation:'SEMI F57: 폴리머 부품(튜빙, 밸브, 피팅 등)의 추출성 금속 이온·파티클 규격.' },
-
-  { id:309, type:'ox', lecture:'13-14강', category:'SEMI',
-    question:'SEMI S10 위험성 매트릭스에서 Likelihood A(Frequent) 등급의 발생확률은 약 3.3%이다.',
-    answer:true, explanation:'Likelihood A Frequent: 3.3% 이상. B Likely: 0.625%. C Occasional: 0.115%. D Remote: 0.025%. E Improbable: 미만.' },
-
-  { id:310, type:'ox', lecture:'10강', category:'노출평가',
-    question:'노출-건강영향 스펙트럼 6단계 중 "임상적 질환"은 가장 마지막 단계이다.',
-    answer:true, explanation:'스펙트럼: 외부노출→내부용량→생물학적영향용량→초기생체영향→조직·장기이상→임상적질환(6단계).' },
-
-  { id:311, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'건식 식각(Dry Etch) 공정에서 할로겐화탄화수소(예: CF₄, CHF₃)가 유해 가스로 사용된다.',
-    answer:true, explanation:'건식 식각: 플라즈마+CF₄, CHF₃, Cl₂, HBr 등 할로겐 가스. 분해 시 독성 불화물·염화물 가스 생성.' },
-
-  { id:312, type:'ox', lecture:'11-12강', category:'경영시스템',
-    question:'중대재해처벌법은 사업주·경영책임자에게 안전·보건 확보 의무를 부과하며, ISO 45001과 연계하여 적용된다.',
-    answer:true, explanation:'중대재해처벌법(2022): 5인 이상 사업장 사업주 형사처벌. ISO 45001 안전보건경영시스템과 연계 운영.' },
-
-  { id:313, type:'ox', lecture:'9강', category:'독성 개념',
-    question:'독성 금속이 필수 금속과 형태가 유사하여 체내에서 필수 금속을 대체함으로써 독성을 나타내는 기전을 "필수금속 대체(Essential Metal Displacement)"라 한다.',
-    answer:true, explanation:'예: 납(Pb)이 Ca²⁺ 대신 뼈에 저장·효소 반응에 개입. 카드뮴(Cd)이 Zn²⁺ 대체. 형태 유사성이 핵심.' },
-
-  { id:314, type:'ox', lecture:'10강', category:'독성 개념',
-    question:'직업성 질환의 발생에서 개인 감수성(Individual Susceptibility)에는 유전적 다형성, 연령, 임신, 기저질환이 포함된다.',
-    answer:true, explanation:'감수성 결정 인자: ①CYP450 등 유전적 다형성 ②연령(어린이·노인 취약) ③임신 ④기저질환(간·신장 기능).' },
-
-  { id:315, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'Hill\'s criteria(힐 기준)는 역학 연구에서 노출과 질병의 인과관계를 판단하는 9가지 기준이다.',
-    answer:true, explanation:'Hill 9기준: 연관의 강도·일관성·특이성·시간성·용량반응·타당성·일관성·실험적·유추.' },
-
-  { id:316, type:'ox', lecture:'11-12강', category:'연관·인과',
-    question:'오즈비(Odds Ratio, OR)는 코호트 연구에서 산출되는 위험도 지표이다.',
-    answer:false, explanation:'OR은 환자-대조군 연구에서 산출. 코호트 연구는 RR(상대위험도)·IRR(발생률비) 산출.' },
-
-  { id:317, type:'ox', lecture:'11-12강', category:'ESG·CSR',
-    question:'ESG의 G(Governance, 지배구조)에는 이사회 다양성, CEO 독립성, 기업 투명성이 포함된다.',
-    answer:true, explanation:'ESG G: 이사회 구성·독립성, 임원 보수 투명성, 반부패·내부통제, 주주권리 보호 등.' },
-
-  { id:318, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'반도체 산화 공정에서 적외선(IR) 히터, 트리클로로에탄, 염산(HCl)이 유해인자로 작용한다.',
-    answer:true, explanation:'산화 공정(Thermal Oxidation): IR 히터(복사열), 웨이퍼 세정제 트리클로로에탄, 건식 산화에 HCl 사용.' },
-
-  { id:319, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'우리나라 산재 발생에서 50세 이상 고령 근로자의 재해 비중이 높다.',
-    answer:true, explanation:'50세 이상 고령자: 근력·반응속도 저하·기저질환 → 재해·직업병 취약. 전체 산재의 상당 비율 점유.' },
-
-  { id:320, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'산업재해 신고 기피 현상은 소규모 사업장에서 특히 두드러지며, 실제 재해 발생률이 공식 통계보다 높을 것으로 추정된다.',
-    answer:true, explanation:'신고 기피: 근로자가 해고 불이익 우려, 사업주가 보험료 인상 우려. 실제 재해가 과소 보고됨.' },
 
   /* ══════════════════════════════════════════════════
      ★ 3차 추가 4지선다 (321~360)
@@ -2315,70 +1831,6 @@ export const questions = [
     answer:2, explanation:'CO₂ 소화설비: 전기 화재에 유효. 밀폐공간 오방출 시 CO₂ 농도 급상승 → O₂ 치환 → 질식. 2018년 삼성 사고.' },
 
   /* ══════════════════════════════════════════════════
-     ★ 4차 추가 OX (416~430) — 독성기초·공정·제도 보완
-  ══════════════════════════════════════════════════ */
-
-  { id:416, type:'ox', lecture:'9강', category:'독성 개념',
-    question:'LD50(반수치사량)은 실험동물 집단의 50%를 사망시키는 독성물질의 투여량이다.',
-    answer:true, explanation:'LD50(Lethal Dose 50): mg/kg 단위. 값이 낮을수록 독성이 강함. 독성 물질 강도 비교에 사용.' },
-
-  { id:417, type:'ox', lecture:'9강', category:'독성 개념',
-    question:'LD50 수치가 낮을수록 독성이 강한 물질이다.',
-    answer:true, explanation:'LD50 낮음 = 소량으로 반수치사 가능 = 독성 강함. 보툴리눔 독소(LD50 ≈ 0.000001 mg/kg)가 자연계 최강 독.' },
-
-  { id:418, type:'ox', lecture:'9강', category:'독성 개념',
-    question:'급성독성(Acute Toxicity)은 24시간 이내 단일 또는 단기 고농도 노출로 나타나는 독성이다.',
-    answer:true, explanation:'급성독성: 단일·단기 노출. 빠르게 나타남. 반면 만성독성은 저농도 반복 장기 노출로 서서히 발현.' },
-
-  { id:419, type:'ox', lecture:'9강', category:'독성 개념',
-    question:'만성독성(Chronic Toxicity)은 저농도 물질에 수개월~수년 반복 노출 후 나타나는 독성이다.',
-    answer:true, explanation:'만성독성: 잠복기 길고 비특이적. 직업성 질환 대부분이 만성독성. 발암성·생식독성·신경독성 포함.' },
-
-  { id:420, type:'ox', lecture:'10강', category:'독성동태',
-    question:'경구(입) 흡수된 독성물질은 간을 통과하면서 일부 대사·분해되는 1차 통과효과(First-pass Effect)가 나타난다.',
-    answer:true, explanation:'First-pass Effect(초회 통과 효과): 경구 흡수 → 간문맥 → 간 초회 대사 → 전신 순환 도달량 감소. 생체이용률 저하.' },
-
-  { id:421, type:'ox', lecture:'10강', category:'독성동태',
-    question:'독성물질의 흡수 속도는 일반적으로 호흡기 > 피부(경피) > 소화기(경구) 순이다.',
-    answer:true, explanation:'폐(호흡기): 표면적 70㎡, 혈관 풍부 → 가장 빠른 흡수. 경피는 지용성 물질에서 빠를 수 있음. 경구는 소화·간 통과 필요.' },
-
-  { id:422, type:'ox', lecture:'10강', category:'독성동태',
-    question:'휘발성 유기화합물(VOC)은 폐(호기)를 통해 배설되므로, 날숨(호기)에서 측정이 가능하다.',
-    answer:true, explanation:'폐 호기 배설: 에탄올(음주 측정), 아세톤, 벤젠 대사체 등 휘발성 물질. 호기 바이오마커 활용 가능.' },
-
-  { id:423, type:'ox', lecture:'11-12강', category:'경영시스템',
-    question:'OHSAS 18001은 2021년 9월에 ISO 45001로 완전히 대체되어 공식 폐지되었다.',
-    answer:true, explanation:'ISO 45001(2018년 발행) 후 3년 전환 기간. 2021년 9월 OHSAS 18001 폐지. ISO 45001로 완전 이전 완료.' },
-
-  { id:424, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'ALD(Atomic Layer Deposition, 원자층 증착)는 원자 한 층씩 순차적으로 박막을 증착하여 나노미터 이하 정밀도로 두께를 제어할 수 있다.',
-    answer:true, explanation:'ALD: 두 전구체를 교대로 공급하여 표면 반응으로 원자층 단위 증착. 10nm 이하 초미세 공정 게이트 절연막·배리어 막에 필수.' },
-
-  { id:425, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'CVD(화학기상증착)는 기상 화학물질의 반응으로 박막을 형성하고, PVD(물리기상증착)는 스퍼터링·열 증발 등 물리적 방법으로 박막을 형성한다.',
-    answer:true, explanation:'CVD: 기상 전구체 화학반응 증착(SiH₄→Si막). PVD: 스퍼터링·증발로 금속막 형성(Al·Ti·Cu 등). 원리가 완전히 다름.' },
-
-  { id:426, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'인듐(In)은 LCD·OLED 투명 전극에 사용되는 ITO의 구성 원소로, 분진 흡입 시 인듐폐증(폐포단백질증)을 유발할 수 있다.',
-    answer:true, explanation:'인듐(In): ITO(Indium Tin Oxide)=LCD/OLED 전극. In₂O₃ 분진 흡입 → 폐포단백질증(PAP, 인듐폐증). IARC 2A군.' },
-
-  { id:427, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'EU ETS(배출권 거래제)는 온실가스 배출 총량을 설정(Cap)하고 배출권을 시장에서 거래(Trade)하는 탄소 감축 시장 메커니즘이다.',
-    answer:true, explanation:'ETS(Emission Trading System, Cap and Trade): 기업이 할당량 초과 시 배출권 구매, 여유분은 매도. 탄소 가격 형성.' },
-
-  { id:428, type:'ox', lecture:'11-12강', category:'탄소중립',
-    question:'2015년 파리 COP21에서 채택된 파리협정은 196개국이 참여하며, 국가결정기여(NDC)를 5년마다 제출·갱신해야 한다.',
-    answer:true, explanation:'파리협정(2015): 1.5°C 노력, 2°C 이하 유지. NDC(Nationally Determined Contribution) 5년 주기 갱신 의무.' },
-
-  { id:429, type:'ox', lecture:'11-12강', category:'제도·법규',
-    question:'화학물질관리법(화관법)은 환경부 소관으로 유해화학물질 제조·수입·사용의 허가·신고 및 사고 대응을 규정한다.',
-    answer:true, explanation:'화관법: 환경부 소관. ↔ 산안법(고용노동부): 작업장 안전보건. 화관법은 화학물질 취급 사업장·수송·영업 허가 규정.' },
-
-  { id:430, type:'ox', lecture:'12-13강', category:'반도체 공정',
-    question:'EUV(극자외선, 13.5nm) 노광은 ArF(193nm) 노광보다 파장이 짧아 더 미세한 회로 패턴 구현이 가능하다.',
-    answer:true, explanation:'EUV(Extreme UV, 13.5nm): 5nm 이하 초미세 공정에 필수. ArF(193nm)·KrF(248nm)보다 파장 훨씬 짧음. ASML 독점 공급.' },
-
-  /* ══════════════════════════════════════════════════
      ★ 4차 추가 4지선다 (431~445)
   ══════════════════════════════════════════════════ */
 
@@ -2590,10 +2042,6 @@ export const questions = [
     options:['산업안전보건법(산안법)','화학물질관리법(화관법)','산업재해보상보험법(산재법)','고압가스안전관리법'],
     answer:1, explanation:'화관법(화학물질관리법): 환경부 소관. 화학물질 취급 사업장 등록·관리·사고 대응. ↔ 산안법: 고용노동부, 작업장 안전보건.' },
 
-  /* ══════════════════════════════════════════════════
-     ★ OX → 빈칸/설명 변형 문제 (466~490)
-     기존 OX 내용을 더 어려운 유형으로 변환
-  ══════════════════════════════════════════════════ */
 
   { id:466, type:'fill', lecture:'9강', category:'중금속 기초',
     question:'크롬은 [①]가(價) 형태가 3가보다 독성이 훨씬 강하며, 폐암·비강암·비중격천공을 유발한다.',
@@ -2735,14 +2183,102 @@ export const questions = [
     options:['LOAEL(최저관찰독성량)','LD50(반수치사량)','NOAEL(무관찰독성량)','BEI(생물학적노출지수)'],
     answer:2, explanation:'NOAEL(No Observed Adverse Effect Level): 독성 없는 최고 용량. NOAEL ÷ 안전계수(100~1000) = RfD/ADI 기준.' },
 
-];
+  /* ══════════════════════════════════════════════════
+     ★ OX→변환 Fill (491~504)
+  ══════════════════════════════════════════════════ */
+
+  { id:491, type:'fill', lecture:'9강', category:'원소·금속',
+    question:'금속의 4대 특성: 전기·열 전도성, [①](늘어나는 성질), 가소성(눌리는 성질), 금속광택.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['연성','Ductility','ductility']],
+    explanation:'금속 4대 특성: 전기/열 전도성, 연성(ductility, 늘어남), 가소성(malleability, 눌림), 금속광택.' },
+
+  { id:492, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'비중(밀도) [①] g/cm³ 이상의 금속을 중금속(Heavy Metal)으로 정의한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['4']],
+    explanation:'중금속 기준: 비중 4 g/cm³ 이상. 납(11.3), 카드뮴(8.6), 수은(13.5) 등이 해당.' },
+
+  { id:493, type:'fill', lecture:'9강', category:'생체축적',
+    question:'먹이사슬을 통해 상위 영양단계 생물일수록 독성물질 농도가 높아지는 현상을 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['생물농축','Biomagnification','biomagnification']],
+    explanation:'생물농축(Biomagnification): 생체축적이 먹이사슬을 통해 증폭. DDT·메틸수은 등 지용성 물질에서 두드러짐.' },
+
+  { id:494, type:'fill', lecture:'9강', category:'생체축적',
+    question:'간에서 담즙으로 분비된 물질이 장에서 재흡수되어 간으로 돌아오는 순환을 [①]이라 하며, 독성물질의 체내 축적을 증가시킨다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['장간순환','Enterohepatic Circulation','enterohepatic circulation']],
+    explanation:'장간순환(Enterohepatic Circulation): 담즙 분비→장 재흡수→간 재순환. 독성물질 체류시간 연장 → 축적 증가.' },
+
+  { id:495, type:'fill', lecture:'9강', category:'ROS·산화적 스트레스',
+    question:'활성산소종(ROS)은 세포막(지질), [①], DNA 세 가지 주요 생체분자를 산화적으로 손상시킨다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['단백질','Protein','protein']],
+    explanation:'ROS 주요 공격 대상: 세포막 지질(지질과산화), 단백질(효소 불활성화), DNA 손상. 대부분의 독성 중금속이 이 경로로 독성 유발.' },
+
+  { id:496, type:'fill', lecture:'9강', category:'신경독성',
+    question:'어린이가 납(Pb) 독성에 특히 취약한 이유 중 하나는 [①]이(가) 성인보다 미발달 상태이기 때문이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['혈뇌장벽','BBB','blood-brain barrier']],
+    explanation:'어린이 납 취약 이유: 호흡량 많음, Ca 대신 납 흡수, 혈뇌장벽(BBB) 미성숙, CNS 아직 발달 중.' },
+
+  { id:497, type:'fill', lecture:'10강', category:'독성 개념',
+    question:'취약성(Vulnerability)은 감수성(Susceptibility)보다 [①] 포괄적인 개념으로, 노출 수준과 사회경제적 대처능력까지 포함한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['더','더욱','훨씬']],
+    explanation:'취약성(Vulnerability) ⊃ 감수성(Susceptibility). 취약성은 내재적 감수성 + 노출 수준 + 사회경제적 대처능력을 모두 포함.' },
+
+  { id:498, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'6가 크롬(Cr⁶⁺)의 주요 체내 흡수 경로는 [①]이며, 도금·용접 작업에서 직업적 노출이 발생한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['호흡기','흡입','폐']],
+    explanation:'6가 크롬 주요 흡수: 호흡기(흄·분진 흡입). 피부 경로도 가능하나 주경로는 흡입. 폐암·비강암·비중격천공 유발.' },
+
+  { id:499, type:'fill', lecture:'9강', category:'방사성 원소',
+    question:'방사성 원소의 반감기(Half-life)는 온도·[①]에 관계없이 일정한 물리적 상수이다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['압력','기압']],
+    explanation:'반감기는 핵의 고유 물리 특성. 화학반응과 달리 온도·압력·화학 상태에 영향받지 않음.' },
+
+  { id:500, type:'fill', lecture:'9강', category:'중금속 기초',
+    question:'무기수은(Hg²⁺)은 주로 [①]에, 유기수은(메틸수은)은 지용성이 높아 혈뇌장벽을 통과하여 [②]에 축적된다.',
+    blanks:[{id:'①',label:'①'},{id:'②',label:'②'}],
+    answers:[['신장','콩팥'],['중추신경계','뇌','CNS']],
+    explanation:'무기수은→신장 축적. 유기수은(메틸수은)→지용성→혈뇌장벽 통과→뇌·중추신경계 축적. 미나마타병 원인.' },
+
+  { id:501, type:'fill', lecture:'10강', category:'바이오마커',
+    question:'모발(Hair) 바이오마커는 혈액·소변보다 [①] 노출 이력 파악에 유리하며, 월 약 1cm 성장하므로 분절 분석으로 수개월 노출을 추정할 수 있다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['과거 장기간','장기','과거','장기간']],
+    explanation:'모발 분절 분석: 두피에서 멀어질수록 오래된 시점 반영. 수개월~수년 전 중금속 노출 이력 재구성 가능.' },
+
+  { id:502, type:'fill', lecture:'10강', category:'독성 개념',
+    question:'직업성 질환에서 개인 감수성을 결정하는 요인에는 유전적 [①](CYP450 등), 연령, 임신, 기저질환이 포함된다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['다형성','Polymorphism','polymorphism']],
+    explanation:'감수성 결정 요인: CYP450 유전적 다형성, 연령(어린이·노인 취약), 임신(태아 독성), 간·신장 기저질환(배설능 저하).' },
+
+  { id:503, type:'fill', lecture:'12-13강', category:'반도체 공정',
+    question:'반도체 산화 공정에서 유해인자로는 IR 히터(복사열), [①](웨이퍼 세정제), 건식 산화 시 사용하는 염산(HCl)이 있다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['트리클로로에탄','TCE','1,1,1-트리클로로에탄']],
+    explanation:'반도체 열 산화 공정 유해인자: IR 히터 열 복사, 웨이퍼 세정제 트리클로로에탄(TCE), 건식 산화 HCl 사용.' },
+
+  { id:504, type:'fill', lecture:'11-12강', category:'탄소중립',
+    question:'고탄소 산업에서 저탄소 경제로 전환 시 발생하는 경제·사회적 비용을 공정하게 분담하여 근로자·지역사회를 보호하는 개념을 [①]이라 한다.',
+    blanks:[{id:'①',label:'①'}],
+    answers:[['공정한전환','공정한 전환','Just Transition','just transition']],
+    explanation:'Just Transition(공정한 전환): ILO·UN 지지. 탄소집약 산업 근로자가 전환 과정에서 불이익을 받지 않도록 지원.' },
+
+]
+;
 
 /* ══════════════════════════════════════════════════
    메타데이터
 ══════════════════════════════════════════════════ */
 export const QUIZ_TYPES = [
-  { id:'all',      label:'전체 유형',    icon:'🎯', color:'indigo'  },
-  { id:'ox',       label:'OX 퀴즈',      icon:'⭕', color:'emerald' },
+  { id:'all',      label:'전체 유형',    icon:'🎯', color:'indigo'  },
   { id:'multiple', label:'4지선다',      icon:'📝', color:'blue'    },
   { id:'fill',     label:'빈칸 채우기',  icon:'✏️', color:'violet'  },
   { id:'short',    label:'주관식',       icon:'💭', color:'orange'  },

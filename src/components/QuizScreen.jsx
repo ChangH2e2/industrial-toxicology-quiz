@@ -1,12 +1,10 @@
 import { useState, useCallback } from 'react'
-import OXQuestion from './questions/OXQuestion'
 import MultipleQuestion from './questions/MultipleQuestion'
 import FillQuestion from './questions/FillQuestion'
 import ShortQuestion from './questions/ShortQuestion'
 import MatchQuestion from './questions/MatchQuestion'
 
 const TYPE_LABELS = {
-  ox: { label: 'OX 퀴즈', icon: '⭕', color: 'emerald' },
   multiple: { label: '4지선다', icon: '📝', color: 'blue' },
   fill: { label: '빈칸채우기', icon: '✏️', color: 'violet' },
   short: { label: '주관식', icon: '💭', color: 'orange' },
@@ -14,7 +12,6 @@ const TYPE_LABELS = {
 }
 
 const BADGE_COLOR = {
-  emerald: 'bg-emerald-100 text-emerald-700',
   blue:    'bg-blue-100 text-blue-700',
   violet:  'bg-violet-100 text-violet-700',
   orange:  'bg-orange-100 text-orange-700',
@@ -111,7 +108,6 @@ export default function QuizScreen({ settings, onFinish, onGoHome }) {
 
           {/* 문제 유형별 렌더 */}
           <div className="p-6">
-            {q.type === 'ox'       && <OXQuestion       q={q} answered={answered} onAnswer={handleAnswer} />}
             {q.type === 'multiple' && <MultipleQuestion  q={q} answered={answered} onAnswer={handleAnswer} />}
             {q.type === 'fill'     && <FillQuestion      q={q} answered={answered} onAnswer={handleAnswer} />}
             {q.type === 'short'    && <ShortQuestion     q={q} answered={answered} onAnswer={handleAnswer} />}
@@ -129,9 +125,7 @@ export default function QuizScreen({ settings, onFinish, onGoHome }) {
                 {isCorrect ? '✅ 정답!' : '❌ 오답'}
                 {!isCorrect && q.type !== 'short' && (
                   <span className="font-normal text-sm">
-                    {q.type === 'ox'
-                      ? `정답: ${q.answer ? 'O (참)' : 'X (거짓)'}`
-                      : q.type === 'fill'
+                    {q.type === 'fill'
                       ? `정답: ${q.answers.map(a => a[0]).join(', ')}`
                       : q.type === 'multiple' || q.type === 'match'
                       ? `정답: ${q.options[q.answer]}`
