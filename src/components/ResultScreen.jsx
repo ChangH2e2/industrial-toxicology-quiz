@@ -1,0 +1,112 @@
+const EMOJI = (pct) => {
+  if (pct >= 90) return '🏆'
+  if (pct >= 70) return '🎉'
+  if (pct >= 50) return '👍'
+  return '📚'
+}
+
+const MSG = (pct) => {
+  if (pct >= 90) return '완벽합니다! 기말 준비 완료!'
+  if (pct >= 70) return '잘 하셨어요! 틀린 문제만 다시 복습해요.'
+  if (pct >= 50) return '절반 통과! 조금 더 복습이 필요해요.'
+  return '다시 도전해보세요! 해설을 잘 읽어보세요.'
+}
+
+const TYPE_LABELS = {
+  ox: 'OX',
+  multiple: '4지선다',
+  fill: '빈칸',
+  short: '주관식',
+  match: '설명맞추기',
+}
+
+export default function ResultScreen({ results, onRestart }) {
+  const { score, total, log } = results
+  const countable = log.filter(l => l.correct !== null)
+  const countableCorrect = countable.filter(l => l.correct).length
+  const pct = countable.length > 0 ? Math.round((countableCorrect / countable.length) * 100) : 0
+
+  const wrong = log.filter(l => l.correct === false)
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-start p-4 pt-8">
+      <div className="w-full max-w-2xl space-y-4 animate-fadeInUp">
+        {/* 결과 카드 */}
+        <div className="bg-white rounded-3xl shadow-xl p-8 text-center">
+          <div className="text-6xl mb-3">{EMOJI(pct)}</div>
+          <h1 className="text-2xl font-bold text-indigo-900 mb-1">퀴즈 완료!</h1>
+          <p className="text-gray-500 text-sm mb-6">{MSG(pct)}</p>
+
+          <div className="flex justify-center gap-8 mb-6">
+            <div>
+              <div className="text-4xl font-black text-indigo-600">{countableCorrect}</div>
+              <div className="text-xs text-gray-400 mt-1">정답</div>
+            </div>
+            <div>
+              <div className="text-4xl font-black text-rose-400">{countable.length - countableCorrect}</div>
+              <div className="text-xs text-gray-400 mt-1">오답</div>
+            </div>
+            <div>
+              <div className="text-4xl font-black text-gray-700">{total}</div>
+              <div className="text-xs text-gray-400 mt-1">전체</div>
+            </div>
+          </div>
+
+          {/* 점수 바 */}
+          <div className="bg-gray-100 rounded-full h-4 mb-2 overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full transition-all"
+              style={{ width: `${pct}%` }}
+            />
+          </div>
+          <p className="text-sm text-gray-500">{countable.length > 0 ? `${pct}점 (${countableCorrect}/${countable.length})` : '주관식 자기채점 완료'}</p>
+        </div>
+
+        {/* 오답 리뷰 */}
+        {wrong.length > 0 && (
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <h2 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
+              <span>❌</span> 틀린 문제 복습 ({wrong.length}개)
+            </h2>
+            <div className="space-y-4">
+              {wrong.map((item, i) => (
+                <div key={i} className="border border-rose-100 rounded-2xl p-4 bg-rose-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs bg-rose-200 text-rose-700 px-2 py-0.5 rounded-full font-semibold">
+                      {TYPE_LABELS[item.q.type] || item.q.type}
+                    </span>
+                    <span className="text-xs text-gray-400">{item.q.lecture} · {item.q.category}</span>
+                  </div>
+                  <p className="text-sm font-semibold text-gray-800 mb-2 leading-relaxed whitespace-pre-line">{item.q.question}</p>
+                  <div className="text-xs bg-white rounded-xl p-3 border border-rose-200">
+                    <span className="font-bold text-emerald-600">정답: </span>
+                    <span className="text-gray-700">
+                      {item.q.type === 'ox'
+                        ? (item.q.answer ? 'O (참)' : 'X (거짓)')
+                        : item.q.type === 'fill'
+                        ? item.q.answers.map(a => a[0]).join(' / ')
+                        : item.q.type === 'multiple' || item.q.type === 'match'
+                        ? item.q.options[item.q.answer]
+                        : item.q.modelAnswer}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2 leading-relaxed">{item.q.explanation}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 버튼 */}
+        <div className="flex gap-3 pb-8">
+          <button
+            onClick={onRestart}
+            className="flex-1 py-4 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-2xl font-bold text-base shadow hover:from-indigo-700 hover:to-violet-700 active:scale-95 transition-all"
+          >
+            다시 풀기 🔄
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
